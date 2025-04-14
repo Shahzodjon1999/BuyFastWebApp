@@ -2,7 +2,7 @@ using BuyFastApi.Abstracts;
 
 namespace BuyFastApi.Services;
 
-public interface IEntityRepository<TEntity> where TEntity : BaseEntity
+public interface IEntityRepository<TEntity> where TEntity : class
 {
     Task<IEnumerable<TEntity>> GetAllAsync(int? from = null, int? size = null);
     Task<TEntity> GetByIdAsync(Guid id);

@@ -1,0 +1,13 @@
+C:\Users\Sh_jonizokov\Desktop\BuyFastWebApp\BuyFastDTO\bin\Debug\net9.0\BuyFastDTO.deps.json
+C:\Users\Sh_jonizokov\Desktop\BuyFastWebApp\BuyFastDTO\bin\Debug\net9.0\BuyFastDTO.dll
+C:\Users\Sh_jonizokov\Desktop\BuyFastWebApp\BuyFastDTO\bin\Debug\net9.0\BuyFastDTO.pdb
+C:\Users\Sh_jonizokov\Desktop\BuyFastWebApp\BuyFastDTO\obj\Debug\net9.0\BuyFastDTO.csproj.AssemblyReference.cache
+C:\Users\Sh_jonizokov\Desktop\BuyFastWebApp\BuyFastDTO\obj\Debug\net9.0\BuyFastDTO.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Sh_jonizokov\Desktop\BuyFastWebApp\BuyFastDTO\obj\Debug\net9.0\BuyFastDTO.AssemblyInfoInputs.cache
+C:\Users\Sh_jonizokov\Desktop\BuyFastWebApp\BuyFastDTO\obj\Debug\net9.0\BuyFastDTO.AssemblyInfo.cs
+C:\Users\Sh_jonizokov\Desktop\BuyFastWebApp\BuyFastDTO\obj\Debug\net9.0\BuyFastDTO.csproj.CoreCompileInputs.cache
+C:\Users\Sh_jonizokov\Desktop\BuyFastWebApp\BuyFastDTO\obj\Debug\net9.0\BuyFastDTO.sourcelink.json
+C:\Users\Sh_jonizokov\Desktop\BuyFastWebApp\BuyFastDTO\obj\Debug\net9.0\BuyFastDTO.dll
+C:\Users\Sh_jonizokov\Desktop\BuyFastWebApp\BuyFastDTO\obj\Debug\net9.0\refint\BuyFastDTO.dll
+C:\Users\Sh_jonizokov\Desktop\BuyFastWebApp\BuyFastDTO\obj\Debug\net9.0\BuyFastDTO.pdb
+C:\Users\Sh_jonizokov\Desktop\BuyFastWebApp\BuyFastDTO\obj\Debug\net9.0\ref\BuyFastDTO.dll

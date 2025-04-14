@@ -4,8 +4,6 @@ using Microsoft.EntityFrameworkCore;
 
 var builder = WebApplication.CreateBuilder(args);
 
-//builder.Services.AddOpenApi();
-
 // Add services to the container
 builder.Services.AddControllers();
 
@@ -22,8 +20,15 @@ var app = builder.Build();
 using (var scope = app.Services.CreateScope())
 {
     var context = scope.ServiceProvider.GetRequiredService<AppDbContext>();
-    
-    context.Database.Migrate();
+    try
+    {
+        context.Database.Migrate();
+    }
+    catch (Exception ex)
+    {
+        Console.WriteLine("An error occurred while migrating the database: " + ex.Message);
+        throw; // Optionally rethrow if you want the app to crash
+    }
     
     if (!context.Users.Any())
     {
@@ -43,6 +48,9 @@ using (var scope = app.Services.CreateScope())
 // Enable Swagger UI in development and production
 app.UseSwagger();
 app.UseSwaggerUI();
+
+//Enable CORS 
+app.UseCors(builder => builder.AllowAnyOrigin().AllowAnyHeader().AllowAnyMethod());
 
 // Optional: Use HTTPS Redirection
 app.UseHttpsRedirection();

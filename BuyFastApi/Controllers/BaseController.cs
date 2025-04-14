@@ -1,3 +1,4 @@
+using AutoMapper;
 using BuyFastApi.Abstracts;
 using BuyFastApi.Services;
 using Microsoft.AspNetCore.Authorization;
@@ -6,15 +7,17 @@ using Microsoft.AspNetCore.Mvc;
 namespace BuyFastApi.Controllers;
 
 [ApiController]
-public abstract class BaseController<TEntity> : ControllerBase where TEntity : BaseEntity
+public abstract class BaseController<TEntityDto,TEntity> : ControllerBase where TEntity :class
 {
     protected readonly ILogger<ControllerBase> _logger;
     protected readonly IEntityRepository<TEntity> _repository;
+    protected readonly IMapper _mapper;
 
-    public BaseController(ILogger<ControllerBase> logger, IEntityRepository<TEntity> repository)
+    public BaseController(ILogger<ControllerBase> logger, IEntityRepository<TEntity> repository,IMapper mapper)
     {
         _logger = logger;
         _repository = repository;
+        _mapper = mapper;
     }
 
     [HttpGet]
@@ -36,9 +39,10 @@ public abstract class BaseController<TEntity> : ControllerBase where TEntity : B
     }
 
     [HttpPost]
-    public async Task<ActionResult> Create(TEntity user)
+    public async Task<ActionResult> Create(TEntityDto user)
     {
-        var entity = await _repository.CreateAsync(user);
+        var mappedUser = _mapper.Map<TEntity>(user);
+        var entity = await _repository.CreateAsync(mappedUser);
         if (entity == null)
             return BadRequest();
 

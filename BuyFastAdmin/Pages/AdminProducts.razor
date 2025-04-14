@@ -1,0 +1,50 @@
+@page "/admin/products"
+@using BuyFastDTO
+@inject HttpClient Http
+@inject NavigationManager NavManager
+
+<h3>Products</h3>
+
+<button class="btn btn-primary" @onclick="CreateNew">Create Product</button>
+@if (products != null)
+{
+    <table class="table table-striped">
+        <thead>
+        <tr><th>Name</th><th>Price</th><th>Actions</th></tr>
+        </thead>
+        <tbody>
+   
+        @foreach (var p in products)
+        {
+            <tr>
+                <td>@p.Name</td>
+                <td>@p.Price</td>
+                <td>
+                    <button class="btn btn-sm btn-warning" @onclick="() => Edit(p.Id)">Edit</button>
+                    <button class="btn btn-sm btn-danger" @onclick="() => Delete(p.Id)">Delete</button>
+                </td>
+            </tr>
+        }
+        </tbody>
+    </table>
+}
+else
+{
+    <p>Продукт ёфт нашуд</p>    
+}
+@code {
+    private List<ProductDto> products = new();
+
+    protected override async Task OnInitializedAsync()
+    {
+        products = await Http.GetFromJsonAsync<List<ProductDto>>("Products");
+    }
+
+    void CreateNew() => NavManager.NavigateTo("/admin/products/create");
+    void Edit(Guid id) => NavManager.NavigateTo($"/admin/products/edit/{id}");
+    async Task Delete(Guid id)
+    {
+        await Http.DeleteAsync($"api/products/{id}");
+        products = await Http.GetFromJsonAsync<List<ProductDto>>("api/products");
+    }
+}

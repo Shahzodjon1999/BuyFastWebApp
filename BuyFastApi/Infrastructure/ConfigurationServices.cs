@@ -1,5 +1,7 @@
 using BuyFastApi.Authentications;
 using BuyFastApi.Mapping;
+using BuyFastApi.Models;
+using BuyFastApi.Services;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Options;
 using Swashbuckle.AspNetCore.SwaggerGen;
@@ -15,7 +17,13 @@ public static class ConfigurationServices
         
         //Added AutoMapping
         services.AddAutoMapper(typeof(MappingProfile));
-
+        
+        //Added Respositories
+        services.AddTransient<IEntityRepository<Category>,EntityRepository<Category>>();
+        services.AddTransient<IEntityRepository<Product>,EntityRepository<Product>>();
+        services.AddTransient<IEntityRepository<User>,EntityRepository<User>>();
+        services.AddTransient<IEntityRepository<Review>,EntityRepository<Review>>();
+        
         //adding custom Auth
         services.AddAuthToken();
         

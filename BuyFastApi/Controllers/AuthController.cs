@@ -4,6 +4,7 @@ using System.Text;
 using BuyFastApi.Authentications;
 using BuyFastApi.Infrastructure;
 using BuyFastApi.Models;
+using BuyFastDTO.ResponseModel;
 using Microsoft.AspNetCore.Identity.Data;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
@@ -54,7 +55,7 @@ public class AuthController : ControllerBase
         return Ok(new { token });
     }
     
-    private string GenerateJwtToken(User user)
+    private AuthResponse GenerateJwtToken(User user)
     {
         var claims = new List<Claim>
         {
@@ -70,6 +71,12 @@ public class AuthController : ControllerBase
             expires:DateTime.Now.Add(TimeSpan.FromMinutes(AuthOptions.lifeTime)),
             signingCredentials:new SigningCredentials(AuthOptions.GetSymmetricSecurityKey(),SecurityAlgorithms.HmacSha256));
    
-       return new JwtSecurityTokenHandler().WriteToken(jwt);
+        string tokenString = new JwtSecurityTokenHandler().WriteToken(jwt);
+        var authResponse = new AuthResponse
+        {
+            Token = tokenString,
+            Role = user.Role,
+        };
+        return authResponse;
     }
 }

@@ -11,8 +11,10 @@ public class MappingProfile: Profile
     {
         CreateMap<User, UserDto>().ReverseMap();
         CreateMap<UserProfile, UserProfileDto>().ReverseMap();
+        CreateMap<Product,CreateProductDto>().ReverseMap();
         CreateMap<Product, ProductDto>().ReverseMap();
         CreateMap<Category, CategoryDto>().ReverseMap();
+        CreateMap<CategoryDto, Category>().ReverseMap();
         CreateMap<Review, ReviewDto>().ReverseMap();
         CreateMap<Order, OrderDto>().ReverseMap();
         CreateMap<OrderItem, OrderItemDto>().ReverseMap();
