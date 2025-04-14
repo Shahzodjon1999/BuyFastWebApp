@@ -1,0 +1,6 @@
+@BuyFastApi_HostAddress = http://localhost:5222
+
+GET {{BuyFastApi_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
