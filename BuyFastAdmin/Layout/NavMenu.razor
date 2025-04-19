@@ -1,4 +1,10 @@
-﻿<div class="top-row ps-3 navbar navbar-dark">
+﻿@using MudBlazor
+
+<MudThemeProvider />
+<MudDialogProvider />
+<MudSnackbarProvider />
+
+<div class="top-row ps-3 navbar navbar-dark">
     <div class="container-fluid">
         <a class="navbar-brand" href="">BuyFastAdmin</a>
         <button title="Navigation menu" class="navbar-toggler" @onclick="ToggleNavMenu">
@@ -14,15 +20,28 @@
                 <span class="bi bi-house-door-fill-nav-menu" aria-hidden="true"></span> Home
             </NavLink>
         </div>
+      <AuthorizeView Roles="Client,Admin">
+            <Authorized>
+                <div class="nav-item px-3">
+                    <MudNavLink Href="/homeproduct" Icon="@Icons.Material.Filled.CalendarToday" IconColor="Color.Surface">Продукты</MudNavLink>
+                </div>
+                <div class="nav-item px-3">
+                    <MudNavLink Href="/categories" Icon="@Icons.Material.Filled.LocalPharmacy" IconColor="Color.Surface">Категории</MudNavLink>
+                </div>
+                <div class="nav-item px-3">
+                    <MudNavLink Href="/queue" Icon="@Icons.Material.Filled.Queue" IconColor="Color.Surface">Очередь</MudNavLink>
+                </div>
+               </Authorized>
+        </AuthorizeView>
+        <AuthorizeView Roles="Admin">
+            <Authorized>               
+                <div class="nav-item px-3">
+                    <MudNavLink Href="/worker" Icon="@Icons.Material.Filled.Person" IconColor="Color.Surface">Сотрудники</MudNavLink>
+                </div>
+        </Authorized>
+        </AuthorizeView>
         <div class="nav-item px-3">
-            <NavLink class="nav-link" href="counter">
-                <span class="bi bi-plus-square-fill-nav-menu" aria-hidden="true"></span> Counter
-            </NavLink>
-        </div>
-        <div class="nav-item px-3">
-            <NavLink class="nav-link" href="/admin/products">
-                <span class="bi bi-list-nested-nav-menu" aria-hidden="true"></span> Product
-            </NavLink>
+            <MudNavLink Href="/about" Icon="@Icons.Material.Filled.Info" IconColor="Color.Surface">О нас</MudNavLink>
         </div>
     </nav>
 </div>

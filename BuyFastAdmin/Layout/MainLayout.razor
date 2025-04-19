@@ -1,12 +1,30 @@
-﻿@inherits LayoutComponentBase
+﻿﻿@using BuyFastAdmin.Authentication
+@using MudBlazor
+
+@inherits LayoutComponentBase
+
 <div class="page">
     <div class="sidebar">
         <NavMenu/>
     </div>
 
     <main>
-        <div class="top-row px-4">
-            <a href="https://learn.microsoft.com/aspnet/core/" target="_blank">About</a>
+         <div class="top-row px-4">
+            <AuthorizeView>
+                <NotAuthorized>
+                    <div class="top-row px-4">
+                        <MudButton Href="login" Variant="Variant.Filled" Color="Color.Primary">Вход</MudButton>
+                        <MudButton Href="register" Variant="Variant.Outlined" Color="Color.Primary">Регистрация</MudButton>
+                    </div>
+                </NotAuthorized>
+                 <Authorized>
+                    <div class="nav-item px-3">
+                        <NavLink class="nav-link" href="logout">
+                            <MudIcon Icon="@Icons.Material.Filled.ExitToApp" /> Выход
+                        </NavLink>
+                    </div>
+                 </Authorized>
+            </AuthorizeView>
         </div>
 
         <article class="content px-4">
@@ -14,3 +32,14 @@
         </article>
     </main>
 </div>
+
+
+@code
+{
+    private async Task Logout()
+    {
+        var customAuthStateProvider = (CustomAuthenticationStateProvider)_authenticationStateProvider;
+        await customAuthStateProvider.UpdateAuthenticationState(null);
+        _navigationManager.NavigateTo("/", true);
+    }
+}

@@ -1,0 +1,63 @@
+@page "/categories"
+@using BuyFastDTO
+@using BuyFastDTO.ResponseModel
+@using System.Net.Http.Headers
+@inject HttpClient Http
+@inject NavigationManager NavManager
+
+<button class="btn btn-primary" @onclick="CreateNew">Создать категорию</button>
+@if (categoriesList != null)
+{
+    <table class="table table-striped">
+        <thead>
+            <tr><th>Название</th><th>дата создания</th></tr>
+        </thead>
+        <tbody>
+            @foreach (var p in categoriesList)
+            {
+                <tr>
+                    <td>@p.Name</td>
+                    <td>@p.createdAt</td>
+                    <td>
+                        <button class="btn btn-sm btn-warning" @onclick="() => Edit(p.Id)">Редактировать</button>
+                        <button class="btn btn-sm btn-danger" @onclick="() => Delete(p.Id)">Удалить</button>
+                    </td>
+                </tr>
+            }
+        </tbody>
+    </table>
+}
+else
+{
+    <p>Продукт ёфт нашуд</p>
+}
+
+@code {
+    [Inject]
+    private CustomAuthenticationStateProvider authenticationStateProvider { get; set; }
+    private string? authToken;
+    private List<CategoryResponse>? categoriesList = new();
+
+    protected override async Task OnInitializedAsync()
+    {
+        authToken = await authenticationStateProvider.GetToken();
+        if (authToken != null)
+        {
+            _httpClient.DefaultRequestHeaders.Authorization = new AuthenticationHeaderValue("Bearer", authToken);
+            categoriesList = await _httpClient.GetFromJsonAsync<List<CategoryResponse>>("api/Categories");
+        }
+    }
+
+    void CreateNew() => NavManager.NavigateTo("/add-category");
+    void Edit(Guid id) => NavManager.NavigateTo($"/admin/categories/edit/{id}");
+    async Task Delete(Guid id)
+    {
+        authToken = await authenticationStateProvider.GetToken();
+        if (authToken != null)
+        {
+            _httpClient.DefaultRequestHeaders.Authorization = new AuthenticationHeaderValue("Bearer", authToken);
+            await _httpClient.DeleteAsync($"api/Categories?id={id}");
+            categoriesList = await _httpClient.GetFromJsonAsync<List<CategoryResponse>>("api/Categories");
+        }
+    }
+}

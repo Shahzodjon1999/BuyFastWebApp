@@ -1,71 +1,93 @@
-using AutoMapper;
-using BuyFastApi.Abstracts;
-using BuyFastApi.Services;
+using BuyFastApi.InterfaceServices;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
+using MySqlConnector;
 
 namespace BuyFastApi.Controllers;
-
+[Authorize]
 [ApiController]
-public abstract class BaseController<TEntityDto,TEntity> : ControllerBase where TEntity :class
+public abstract class BaseController<TEntityDto,TEntity> : ControllerBase where TEntityDto :class where TEntity : class
 {
     protected readonly ILogger<ControllerBase> _logger;
-    protected readonly IEntityRepository<TEntity> _repository;
-    protected readonly IMapper _mapper;
-
-    public BaseController(ILogger<ControllerBase> logger, IEntityRepository<TEntity> repository,IMapper mapper)
+    protected readonly IGenericService<TEntityDto, TEntity> _services;
+    public BaseController(ILogger<ControllerBase> logger,IGenericService<TEntityDto, TEntity> services)
     {
         _logger = logger;
-        _repository = repository;
-        _mapper = mapper;
+        _services = services;
     }
 
     [HttpGet]
-    [AllowAnonymous]
-    public virtual async Task<IEnumerable<TEntity>> Get(int? from = null, int? size = null)
+    public virtual ActionResult<IEnumerable<TEntity>> GetAll()
     {
-        return await _repository.GetAllAsync(from, size);
+        try
+        {
+            var getAll = _services.GetAll();
+            if (getAll is not null)
+                return Ok(getAll);
+            return Ok("You have not data");
+        }
+        catch (Exception ex)
+        {
+            throw new Exception($"You have exception:{ex.Message} in the Controller Method GetAll");
+        }
     }
 
-    [HttpGet("GetById")]
-    [AllowAnonymous]
-    public async Task<ActionResult> GetById(Guid id)
+    [HttpGet("Id")]
+    public ActionResult<TEntity> GetById(Guid id)
     {
-        var entity = await _repository.GetByIdAsync(id);
-        if (entity == null)
-            return NotFound();
-
-        return Ok(entity);
+        try
+        {
+            var getById = _services.GetById(id);
+            if (getById is null)
+                return Ok("You have not data");
+            return Ok(getById);
+        }
+        catch (Exception ex)
+        {
+            throw new Exception($"You have exception:{ex.Message} in the Method GetById");
+        }
     }
 
     [HttpPost]
-    public async Task<ActionResult> Create(TEntityDto user)
+    public virtual ActionResult<string> Create([FromBody] TEntityDto request)
     {
-        var mappedUser = _mapper.Map<TEntity>(user);
-        var entity = await _repository.CreateAsync(mappedUser);
-        if (entity == null)
-            return BadRequest();
-
-        return Ok(entity);
+        try
+        {
+            return _services.Create(request);
+        }
+        catch (MySqlException)
+        {
+            return $"Didn't save data {request}";
+        }
+        catch (Exception ex)
+        {
+            throw new Exception($"You have exception:{ex.Message} in the Method Create");
+        }
     }
 
     [HttpPut]
-    public async Task<ActionResult> Update(Guid userId, TEntity user)
+    public ActionResult<string> Update(TEntityDto updateRequest)
     {
-        var _user = await _repository.UpdateAsync(userId, user);
-        if (_user == null)
-            return BadRequest();
-
-        return Ok(_user);
+        try
+        {
+            return _services.Update(updateRequest);
+        }
+        catch (Exception ex)
+        {
+            throw new Exception($"You have exception:{ex.Message} in the  Method Update");
+        }
     }
 
     [HttpDelete]
-    public async Task<ActionResult> Delete(Guid userId)
+    public ActionResult<string> Delete(Guid id)
     {
-        var response = await _repository.DeleteAsync(userId);
-        if (response)
-            BadRequest();
-
-        return Ok();
+        try
+        {
+            return _services.Delete(id);
+        }
+        catch (Exception ex)
+        {
+            throw new Exception($"You have exception:{ex.Message} in the Method Delete");
+        }
     }
 }

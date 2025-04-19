@@ -12,7 +12,7 @@ public class MappingProfile: Profile
         CreateMap<User, UserDto>().ReverseMap();
         CreateMap<UserProfile, UserProfileDto>().ReverseMap();
         CreateMap<Product,CreateProductDto>().ReverseMap();
-        CreateMap<Product, ProductDto>().ReverseMap();
+        CreateMap<CreateProductDto, Product>().ReverseMap();
         CreateMap<Category, CategoryDto>().ReverseMap();
         CreateMap<CategoryDto, Category>().ReverseMap();
         CreateMap<Review, ReviewDto>().ReverseMap();

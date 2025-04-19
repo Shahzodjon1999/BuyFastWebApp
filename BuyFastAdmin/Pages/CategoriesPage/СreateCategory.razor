@@ -1,0 +1,61 @@
+﻿@page "/add-category"
+@inject HttpClient Http
+@using System.Net.Http.Json
+@using BuyFastDTO
+
+
+<div class="row">
+    <div class="col-lg-4 offset-lg-4 pt-4 border">
+<EditForm Model="categoryModel" OnValidSubmit="HandleValidSubmit">
+    <DataAnnotationsValidator />
+    <ValidationSummary />
+
+    <h3>Добавить продукт</h3>
+    <div>
+        <label>Name:</label>
+        <InputText @bind-Value="categoryModel.Name" class="form-control" />
+    </div>
+
+    <button type="submit" class="btn btn-primary mt-2">Add Category</button>
+</EditForm>
+</div>
+</div>
+@if (!string.IsNullOrEmpty(message))
+{
+    <p>@message</p>
+}
+
+@code {
+    private CategoryDto categoryModel = new();
+    private string parentIdInput;
+    private string message;
+
+    private async Task HandleValidSubmit()
+    {
+        // Optional: Assign ParentCategoryId if provided
+        Guid? parentId = null;
+        if (Guid.TryParse(parentIdInput, out var parsedId))
+        {
+            parentId = parsedId;
+        }
+
+        var newCategory = new
+        {
+            Name = categoryModel.Name,
+            ParentCategoryId = parentId
+        };
+
+        var response = await Http.PostAsJsonAsync("api/categories", newCategory);
+
+        if (response.IsSuccessStatusCode)
+        {
+            message = "Category added successfully.";
+            categoryModel = new(); // reset form
+            parentIdInput = string.Empty;
+        }
+        else
+        {
+            message = "Failed to add category.";
+        }
+    }
+}

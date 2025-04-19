@@ -1,10 +1,13 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.12.35728.132 d17.12
+MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BuyFastApi", "BuyFastApi\BuyFastApi.csproj", "{228FFCB0-9209-4E37-8899-3387AFBFDCD1}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BuyFastDTO", "BuyFastDTO\BuyFastDTO.csproj", "{5B008003-047E-4044-8282-7AF9F59C96FC}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BuyFastAdmin", "BuyFastAdmin\BuyFastAdmin.csproj", "{54B0CA98-199B-41E6-B958-B273B8B6D0A6}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BuyFastAdmin", "BuyFastAdmin\BuyFastAdmin.csproj", "{9738A8F2-22F2-4FB8-A59D-F419945963D2}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -20,9 +23,12 @@ Global
 		{5B008003-047E-4044-8282-7AF9F59C96FC}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{5B008003-047E-4044-8282-7AF9F59C96FC}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{5B008003-047E-4044-8282-7AF9F59C96FC}.Release|Any CPU.Build.0 = Release|Any CPU
-		{54B0CA98-199B-41E6-B958-B273B8B6D0A6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{54B0CA98-199B-41E6-B958-B273B8B6D0A6}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{54B0CA98-199B-41E6-B958-B273B8B6D0A6}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{54B0CA98-199B-41E6-B958-B273B8B6D0A6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9738A8F2-22F2-4FB8-A59D-F419945963D2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9738A8F2-22F2-4FB8-A59D-F419945963D2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9738A8F2-22F2-4FB8-A59D-F419945963D2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9738A8F2-22F2-4FB8-A59D-F419945963D2}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
 	EndGlobalSection
 EndGlobal

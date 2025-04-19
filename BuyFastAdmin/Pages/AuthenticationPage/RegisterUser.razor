@@ -1,0 +1,63 @@
+﻿@page "/register"
+@using BuyFastDTO.RequestModels
+<div class="row">
+    <div class="col-lg-4 offset-lg-4 pt-4 border">
+        <EditForm Model="@clientRequest" OnValidSubmit="Create" FormName="WorkerForm">
+            <DataAnnotationsValidator />
+            <div class="mb-3 text-center flex-column">
+                <h3>Регистрация</h3>
+            </div>
+            <div class="mb-3">
+                <label>Имя</label>
+                <InputText @bind-Value="clientRequest.Email" class="form-control" />
+                <ValidationMessage For="() => clientRequest.Email" />
+            </div>
+            <div class="mb-3">
+                <label>Фамилия</label>
+                <InputText @bind-Value="clientRequest.Password" class="form-control" />
+                <ValidationMessage For="() => clientRequest.Password" />
+            </div>
+            <div class="mb-3">
+                <label>Адресс</label>
+                <InputText @bind-Value="clientRequest.Username" class="form-control" />
+                <ValidationMessage For="() => clientRequest.Username" />
+            </div>
+            <div class="mb-3">
+                <label>Номер телфон</label>
+                <InputText @bind-Value="clientRequest.Role" class="form-control" />
+                <ValidationMessage For="() => clientRequest.Role" />
+            </div>            
+            <div class="mb-3 d-grid gap-2">
+                <button type="submit" class="btn btn-outline-success">Сохранить</button>
+                <button type="button" @onclick="Back" class="btn btn-primary">Назад</button>
+            </div>
+        </EditForm>
+    </div>
+</div>
+@code {
+    private CreateUserModel clientRequest = new CreateUserModel();
+    protected async Task Create()
+    {
+        try
+        {
+            var response = await _httpClient.PostAsJsonAsync<CreateUserModel>("api/Client", clientRequest);
+            if (response.IsSuccessStatusCode)
+            {
+                await _js.InvokeVoidAsync("alert", "Seccessfull save your data");
+                clientRequest = new CreateUserModel();
+            }
+            else
+            {
+                await _js.InvokeVoidAsync("alert", "Ошибка");
+            }
+        }
+        catch (Exception)
+        {
+            throw;
+        }
+    }
+    private void Back()
+    {
+        _navigationManager.NavigateTo("/login");
+    }
+}

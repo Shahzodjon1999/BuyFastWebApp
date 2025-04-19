@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("BuyFastApi")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+f94ae0ade1d74eb08da424abbcb66c7b121a0aca")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+8f709420d7ced0ea361c8b056db7a6bbb5e9a40f")]
 [assembly: System.Reflection.AssemblyProductAttribute("BuyFastApi")]
 [assembly: System.Reflection.AssemblyTitleAttribute("BuyFastApi")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

@@ -1,16 +1,15 @@
-using AutoMapper;
-using BuyFastApi.Infrastructure;
+using BuyFastApi.InterfaceServices;
 using BuyFastApi.Models;
-using BuyFastApi.Services;
-using BuyFastDTO;
+using BuyFastDTO.RequestModels;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
-using Microsoft.EntityFrameworkCore;
 
 namespace BuyFastApi.Controllers;
 
-
-[Route("[controller]")]
-public class ProductsController : BaseController<ProductDto,Product>
+[Authorize]
+[Route("api/[controller]")]
+public class ProductsController : BaseController<CreateProductDto,Product>
 {
-    public ProductsController(ILogger<ProductsController> logger, IEntityRepository<Product> repository,IMapper mapper) : base(logger, repository, mapper) { }
+    public ProductsController(ILogger<ProductsController> logger, IGenericService<CreateProductDto,Product> service) 
+        : base(logger, service) { }
 }

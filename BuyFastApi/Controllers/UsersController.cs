@@ -1,14 +1,14 @@
-using AutoMapper;
+using BuyFastApi.InterfaceServices;
 using BuyFastApi.Models;
-using BuyFastApi.Services;
 using BuyFastDTO.RequestModels;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 
 namespace BuyFastApi.Controllers;
-
+[Authorize]
 [Route("api/[controller]")]
 public class UsersController : BaseController<UserDto,User>
 {
-    public UsersController(ILogger<ControllerBase> logger, IEntityRepository<User> repository, IMapper mapper)
-        : base(logger, repository, mapper) { }
+    public UsersController(ILogger<ControllerBase> logger, IGenericService<UserDto,User> service)
+        : base(logger, service) { }
 }

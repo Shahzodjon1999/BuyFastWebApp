@@ -1,0 +1,13 @@
+﻿@inject NavigationManager navigationManager
+
+@page "/logout"
+
+<h3>Страница выхода из системы</h3>
+@code {
+    protected override async Task OnInitializedAsync()
+    {
+        var customAuthStateProvider = (CustomAuthenticationStateProvider)_authStateProvider;
+        await customAuthStateProvider.UpdateAuthenticationState(null);
+        _navigationManager.NavigateTo("/", true);
+    }
+}

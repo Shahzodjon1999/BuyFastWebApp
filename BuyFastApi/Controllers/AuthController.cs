@@ -13,7 +13,6 @@ using Microsoft.IdentityModel.Tokens;
 namespace BuyFastApi.Controllers;
 
 [Route("api/[controller]")]
-[ApiController]
 public class AuthController : ControllerBase
 {
     private readonly AppDbContext _context;
@@ -50,9 +49,7 @@ public class AuthController : ControllerBase
         var user = await _context.Users.FirstOrDefaultAsync(u => u.Email == model.Email);
         if (user == null || !BCrypt.Net.BCrypt.Verify(model.Password, user.PasswordHash))
             return Unauthorized("Invalid credentials");
-
-        var token = GenerateJwtToken(user);
-        return Ok(new { token });
+       return Ok(GenerateJwtToken(user));
     }
     
     private AuthResponse GenerateJwtToken(User user)
