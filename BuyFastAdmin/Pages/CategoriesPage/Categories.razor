@@ -46,6 +46,10 @@ else
             _httpClient.DefaultRequestHeaders.Authorization = new AuthenticationHeaderValue("Bearer", authToken);
             categoriesList = await _httpClient.GetFromJsonAsync<List<CategoryResponse>>("api/Categories");
         }
+        else
+        {
+            await _js.InvokeVoidAsync("alert", "Токен истек!!!");
+        }
     }
 
     void CreateNew() => NavManager.NavigateTo("/add-category");
@@ -58,6 +62,10 @@ else
             _httpClient.DefaultRequestHeaders.Authorization = new AuthenticationHeaderValue("Bearer", authToken);
             await _httpClient.DeleteAsync($"api/Categories?id={id}");
             categoriesList = await _httpClient.GetFromJsonAsync<List<CategoryResponse>>("api/Categories");
+        }
+        else
+        {
+            await _js.InvokeVoidAsync("alert", "Токен истек!!!");
         }
     }
 }

@@ -1,6 +1,142 @@
-﻿@page "/editeproduct"
-<h3>EditeProduct</h3>
+﻿@page "/editeproduct/{id:guid}"
+@using System.Net.Http.Headers
+@using BuyFastDTO
+@inject HttpClient Http
+@inject NavigationManager Navigation
+@inject CustomAuthenticationStateProvider _authenticationStateProvider
+
+<h3>Edit Product</h3>
+
+@if (product == null)
+{
+    <p><em>Loading...</em></p>
+}
+else
+{
+    <div class="row">
+        <div class="col-lg-4 offset-lg-4 pt-4 border">
+            <EditForm Model="@product" OnValidSubmit="HandleValidSubmit">
+                <DataAnnotationsValidator />
+                <ValidationSummary />
+
+                <div class="mb-3">
+                    <label for="productName" class="form-label">Name</label>
+                    <InputText id="productName" @bind-Value="product.Name" class="form-control" />
+                </div>
+
+                <div class="mb-3">
+                    <label for="productDescription" class="form-label">Description</label>
+                    <InputTextArea id="productDescription" @bind-Value="product.Description" class="form-control" />
+                </div>
+
+                <div class="mb-3">
+                    <label for="productPrice" class="form-label">Price</label>
+                    <InputNumber id="productPrice"  @bind-Value="product.Price" class="form-control" />
+                </div>
+
+                <div class="mb-3">
+                    <label for="productCategory" class="form-label">Category</label>
+                    <InputSelect id="productCategory" @bind-Value="product.CategoryId" class="form-select">
+                        <option value="">-- Select Category --</option>
+                        @foreach (var category in Categories)
+                        {
+                            <option value="@category.Id">@category.Name</option>
+                        }
+                    </InputSelect>
+                </div>
+
+                <div class="mb-3">
+                    <label class="form-label">Current Image</label><br />
+                    @if (!string.IsNullOrEmpty(product.ImageUrl))
+                    {
+                        <img src="@product.ImageUrl" alt="Product Image" class="img-thumbnail" style="max-width: 200px;" />
+                    }
+                    else
+                    {
+                        <p>No image uploaded.</p>
+                    }
+                </div>
+
+                <div class="mb-3">
+                    <label for="productImage" class="form-label">Replace Image</label>
+                    <InputFile id="productImage" OnChange="HandleImageUpload" class="form-control" />
+                </div>
+
+                @if (!string.IsNullOrEmpty(errorMessage))
+                {
+                    <div class="alert alert-danger">@errorMessage</div>
+                }
+
+                <button type="submit" class="btn btn-primary">Save Changes</button>
+            </EditForm>
+        </div>
+    </div>
+}
 
 @code {
+    [Parameter] public Guid id { get; set; }
+    private ProductDto? product;
+    private List<CategoryDto> Categories = new();
+    private IBrowserFile? selectedFile;
+    private string? errorMessage;
+    private const long maxFileSize = 10242880;
 
+    protected override async Task OnInitializedAsync()
+    {
+        var token = await _authenticationStateProvider.GetToken();
+
+        if (!string.IsNullOrEmpty(token))
+        {
+            Http.DefaultRequestHeaders.Authorization = new AuthenticationHeaderValue("Bearer", token);
+        }
+
+        product = await Http.GetFromJsonAsync<ProductDto>($"api/Products/Id?id={id}");
+        Categories = await Http.GetFromJsonAsync<List<CategoryDto>>("api/categories");
+    }
+
+    private void HandleImageUpload(InputFileChangeEventArgs e)
+    {
+        selectedFile = e.File;
+    }
+
+    private async Task HandleValidSubmit()
+    {
+        try
+        {
+            var token = await _authenticationStateProvider.GetToken();
+
+            if (!string.IsNullOrEmpty(token))
+            {
+                Http.DefaultRequestHeaders.Authorization = new AuthenticationHeaderValue("Bearer", token);
+
+                var content = new MultipartFormDataContent();
+                content.Add(new StringContent(product.Name), nameof(product.Name));
+                content.Add(new StringContent(product.Description), nameof(product.Description));
+                content.Add(new StringContent(product.Price.ToString()), nameof(product.Price));
+                content.Add(new StringContent(product.CategoryId.ToString()), nameof(product.CategoryId));
+
+                if (selectedFile != null)
+                {
+                    var fileContent = new StreamContent(selectedFile.OpenReadStream(maxFileSize));
+                    fileContent.Headers.ContentType = new MediaTypeHeaderValue(selectedFile.ContentType);
+                    content.Add(fileContent, nameof(product.ImageUrl), selectedFile.Name);
+                }
+
+                var response = await Http.PutAsync($"api/products/{product.Id}", content);
+
+                if (response.IsSuccessStatusCode)
+                {
+                    Navigation.NavigateTo("/homeproduct");
+                }
+                else
+                {
+                    errorMessage = "Error updating product.";
+                }
+            }
+        }
+        catch (Exception ex)
+        {
+            errorMessage = $"Exception: {ex.Message}";
+        }
+    }
 }

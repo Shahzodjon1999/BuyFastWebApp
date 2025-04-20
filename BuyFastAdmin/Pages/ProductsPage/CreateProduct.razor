@@ -116,10 +116,10 @@
                     if (!string.IsNullOrEmpty(token))
                     {
                         _httpClient.DefaultRequestHeaders.Authorization = new AuthenticationHeaderValue("Bearer", token);
-                        var response = await _httpClient.PostAsJsonAsync("api/Products", product);
+                        var response = await _httpClient.PostAsync("api/Products", content);
                         if (response.IsSuccessStatusCode)
                         {
-                            Navigation.NavigateTo("/products");
+                            Navigation.NavigateTo("/homeproduct");
                         }
                         else
                         {

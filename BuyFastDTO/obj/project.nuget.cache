@@ -1,10 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "tW24rW4pbG4=",
+  "dgSpecHash": "VlpPfwlHPcI=",
   "success": true,
-  "projectFilePath": "D:\\BuyFastWebApp\\BuyFastDTO\\BuyFastDTO.csproj",
+  "projectFilePath": "C:\\Users\\Sh_jonizokov\\Desktop\\BuyFastWebApp\\BuyFastDTO\\BuyFastDTO.csproj",
   "expectedPackageFiles": [
-    "C:\\Users\\Shakhzodjon\\.nuget\\packages\\bcrypt.net-next\\4.0.3\\bcrypt.net-next.4.0.3.nupkg.sha512"
+    "C:\\Users\\Sh_jonizokov\\.nuget\\packages\\bcrypt.net-next\\4.0.3\\bcrypt.net-next.4.0.3.nupkg.sha512"
   ],
   "logs": []
 }

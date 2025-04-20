@@ -51,7 +51,7 @@ app.UseSwaggerUI();
 
 //Enable CORS 
 app.UseCors(builder => builder.AllowAnyOrigin().AllowAnyHeader().AllowAnyMethod());
-
+app.UseStaticFiles(); 
 // Optional: Use HTTPS Redirection
 app.UseHttpsRedirection();
 

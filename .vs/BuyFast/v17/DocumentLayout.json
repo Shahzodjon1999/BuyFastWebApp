@@ -3,12 +3,16 @@
   "WorkspaceRootPath": "C:\\Users\\Sh_jonizokov\\Desktop\\BuyFastWebApp\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{9738A8F2-22F2-4FB8-A59D-F419945963D2}|BuyFastAdmin\\BuyFastAdmin.csproj|c:\\users\\sh_jonizokov\\desktop\\buyfastwebapp\\buyfastadmin\\pages\\categoriespage\\categories.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{9738A8F2-22F2-4FB8-A59D-F419945963D2}|BuyFastAdmin\\BuyFastAdmin.csproj|solutionrelative:buyfastadmin\\pages\\categoriespage\\categories.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{9738A8F2-22F2-4FB8-A59D-F419945963D2}|BuyFastAdmin\\BuyFastAdmin.csproj|c:\\users\\sh_jonizokov\\desktop\\buyfastwebapp\\buyfastadmin\\pages\\productspage\\editeproduct.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{9738A8F2-22F2-4FB8-A59D-F419945963D2}|BuyFastAdmin\\BuyFastAdmin.csproj|solutionrelative:buyfastadmin\\pages\\productspage\\editeproduct.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{9738A8F2-22F2-4FB8-A59D-F419945963D2}|BuyFastAdmin\\BuyFastAdmin.csproj|c:\\users\\sh_jonizokov\\desktop\\buyfastwebapp\\buyfastadmin\\pages\\categoriespage\\\u0441reatecategory.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{9738A8F2-22F2-4FB8-A59D-F419945963D2}|BuyFastAdmin\\BuyFastAdmin.csproj|solutionrelative:buyfastadmin\\pages\\categoriespage\\\u0441reatecategory.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{228FFCB0-9209-4E37-8899-3387AFBFDCD1}|BuyFastApi\\BuyFastApi.csproj|c:\\users\\sh_jonizokov\\desktop\\buyfastwebapp\\buyfastapi\\controllers\\productscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{228FFCB0-9209-4E37-8899-3387AFBFDCD1}|BuyFastApi\\BuyFastApi.csproj|solutionrelative:buyfastapi\\controllers\\productscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9738A8F2-22F2-4FB8-A59D-F419945963D2}|BuyFastAdmin\\BuyFastAdmin.csproj|c:\\users\\sh_jonizokov\\desktop\\buyfastwebapp\\buyfastadmin\\pages\\productspage\\adminproducts.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{9738A8F2-22F2-4FB8-A59D-F419945963D2}|BuyFastAdmin\\BuyFastAdmin.csproj|solutionrelative:buyfastadmin\\pages\\productspage\\adminproducts.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     }
   ],
   "DocumentGroupContainers": [
@@ -43,27 +47,40 @@
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "\u0421reateCategory.razor",
-              "DocumentMoniker": "C:\\Users\\Sh_jonizokov\\Desktop\\BuyFastWebApp\\BuyFastAdmin\\Pages\\CategoriesPage\\\u0421reateCategory.razor",
-              "RelativeDocumentMoniker": "BuyFastAdmin\\Pages\\CategoriesPage\\\u0421reateCategory.razor",
-              "ToolTip": "C:\\Users\\Sh_jonizokov\\Desktop\\BuyFastWebApp\\BuyFastAdmin\\Pages\\CategoriesPage\\\u0421reateCategory.razor",
-              "RelativeToolTip": "BuyFastAdmin\\Pages\\CategoriesPage\\\u0421reateCategory.razor",
-              "ViewState": "AgIAAB8AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-04-19T13:25:55.242Z",
+              "Title": "ProductsController.cs",
+              "DocumentMoniker": "C:\\Users\\Sh_jonizokov\\Desktop\\BuyFastWebApp\\BuyFastApi\\Controllers\\ProductsController.cs",
+              "RelativeDocumentMoniker": "BuyFastApi\\Controllers\\ProductsController.cs",
+              "ToolTip": "C:\\Users\\Sh_jonizokov\\Desktop\\BuyFastWebApp\\BuyFastApi\\Controllers\\ProductsController.cs",
+              "RelativeToolTip": "BuyFastApi\\Controllers\\ProductsController.cs",
+              "ViewState": "AgIAAEUAAAAAAAAAAAAAAEoAAAANAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-20T11:59:09.668Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "Categories.razor",
-              "DocumentMoniker": "C:\\Users\\Sh_jonizokov\\Desktop\\BuyFastWebApp\\BuyFastAdmin\\Pages\\CategoriesPage\\Categories.razor",
-              "RelativeDocumentMoniker": "BuyFastAdmin\\Pages\\CategoriesPage\\Categories.razor",
-              "ToolTip": "C:\\Users\\Sh_jonizokov\\Desktop\\BuyFastWebApp\\BuyFastAdmin\\Pages\\CategoriesPage\\Categories.razor",
-              "RelativeToolTip": "BuyFastAdmin\\Pages\\CategoriesPage\\Categories.razor",
-              "ViewState": "AgIAACUAAAAAAAAAAAAcwDoAAAA6AAAAAAAAAA==",
+              "Title": "EditeProduct.razor",
+              "DocumentMoniker": "C:\\Users\\Sh_jonizokov\\Desktop\\BuyFastWebApp\\BuyFastAdmin\\Pages\\ProductsPage\\EditeProduct.razor",
+              "RelativeDocumentMoniker": "BuyFastAdmin\\Pages\\ProductsPage\\EditeProduct.razor",
+              "ToolTip": "C:\\Users\\Sh_jonizokov\\Desktop\\BuyFastWebApp\\BuyFastAdmin\\Pages\\ProductsPage\\EditeProduct.razor",
+              "RelativeToolTip": "BuyFastAdmin\\Pages\\ProductsPage\\EditeProduct.razor",
+              "ViewState": "AgIAAAgAAAAAAAAAAAAAACEAAABBAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-04-19T13:25:54.09Z",
+              "WhenOpened": "2025-04-20T11:53:09.613Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "AdminProducts.razor",
+              "DocumentMoniker": "C:\\Users\\Sh_jonizokov\\Desktop\\BuyFastWebApp\\BuyFastAdmin\\Pages\\ProductsPage\\AdminProducts.razor",
+              "RelativeDocumentMoniker": "BuyFastAdmin\\Pages\\ProductsPage\\AdminProducts.razor",
+              "ToolTip": "C:\\Users\\Sh_jonizokov\\Desktop\\BuyFastWebApp\\BuyFastAdmin\\Pages\\ProductsPage\\AdminProducts.razor",
+              "RelativeToolTip": "BuyFastAdmin\\Pages\\ProductsPage\\AdminProducts.razor",
+              "ViewState": "AgIAAB0AAAAAAAAAAAAAADAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-04-20T11:52:55.128Z",
               "EditorCaption": ""
             }
           ]

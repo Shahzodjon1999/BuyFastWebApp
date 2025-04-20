@@ -1,38 +1,41 @@
 @page "/homeproduct"
 @using BuyFastDTO
 @using System.Net.Http.Headers
-<button class="btn btn-primary" @onclick="CreateNew">Create Category</button>
-@if (categoriesList != null)
+<button class="btn btn-primary" @onclick="CreateNew">Создать продукт</button>
+
+@if (productlist != null && productlist.Any())
 {
-    <table class="table table-striped">
-        <thead>
-        <tr><th>Name</th><th>Price</th><th>Actions</th></tr>
-        </thead>
-        <tbody>
-        @foreach (var p in categoriesList)
+    <div class="row row-cols-1 row-cols-md-3 g-4">
+        @foreach (var p in productlist)
         {
-            <tr>
-                <td>@p.Name</td>
-                <td>
-                    <button class="btn btn-sm btn-warning" @onclick="() => Edit(p.Id)">Edit</button>
-                    <button class="btn btn-sm btn-danger" @onclick="() => Delete(p.Id)">Delete</button>
-                </td>
-            </tr>
+            <div class="col">
+                <div class="card h-100 shadow-sm">
+                    <img src="@p.ImageUrl" class="card-img-top" alt="@p.Name" style="height: 300px; object-fit: cover;" />
+                    <div class="card-body">
+                        <h5 class="card-title">@p.Name</h5>
+                        <p class="card-text text-muted">$@Math.Round(p.Price,2)</p>
+                        <div class="d-flex justify-content-between">
+                            <button class="btn btn-sm btn-warning" @onclick="() => Edit(p.Id)">Edit</button>
+                            <button class="btn btn-sm btn-danger" @onclick="() => Delete(p.Id)">Delete</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
         }
-        </tbody>
-    </table>
+    </div>
 }
 else
 {
     <p>Продукт ёфт нашуд</p>
 }
 
+
 @code {
     [Inject]
     private CustomAuthenticationStateProvider? authenticationStateProvider { get; set; }
 
     private string? authToken;
-    private List<CategoryDto>? categoriesList = new();
+    private List<ProductDto>? productlist = new();
 
     protected override async Task OnInitializedAsync()
     {
@@ -40,15 +43,25 @@ else
         if (authToken != null)
         {
             _httpClient.DefaultRequestHeaders.Authorization = new AuthenticationHeaderValue("Bearer", authToken);
-            categoriesList = await _httpClient.GetFromJsonAsync<List<CategoryDto>>("api/Products");
+            productlist = await _httpClient.GetFromJsonAsync<List<ProductDto>>("api/Products");
         }
     }
 
-     void CreateNew() => _navigationManager.NavigateTo("/createProduct");
+    void CreateNew() => _navigationManager.NavigateTo("/createProduct");
     void Edit(Guid id) => _navigationManager.NavigateTo($"/editeproduct/{id}");
     async Task Delete(Guid id)
     {
-    //     await WebRequestMethods.Http.DeleteAsync($"api/products/{id}");
-    //     categoriesList = await WebRequestMethods.Http.GetFromJsonAsync<List<ProductDto>>("api/products");
-     }
+        if (authToken != null)
+        {
+            var response = await _httpClient.DeleteAsync($"api/Products?id={id}");
+            if (response.IsSuccessStatusCode)
+            {
+                productlist = await _httpClient.GetFromJsonAsync<List<ProductDto>>("api/products");
+            }
+            else
+            {
+                await _js.InvokeVoidAsync("alert", "Data doesn't deleted!!!");
+            }
+        }
+    }
 }

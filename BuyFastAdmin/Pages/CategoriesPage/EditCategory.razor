@@ -45,7 +45,10 @@ else
                 categoryModel = response;
             }
         }     
-
+        else
+        {
+            await _js.InvokeVoidAsync("alert", "Токен истек!!!");
+        }
     }
 
     private async Task HandleSubmit()
@@ -59,8 +62,9 @@ else
             {
                 NavManager.NavigateTo("/categories");
             }
-            else{
-
+            else
+            {
+                await _js.InvokeVoidAsync("alert", "Не сохраняет данные в категорию!!!");
             }
         }
     }

@@ -49,13 +49,13 @@
 
         if (response.IsSuccessStatusCode)
         {
-            message = "Category added successfully.";
+            message = "Категория успешно добавлена.";
             categoryModel = new(); // reset form
             parentIdInput = string.Empty;
         }
         else
         {
-            message = "Failed to add category.";
+            message = "Не удалось добавить категорию.";
         }
     }
 }

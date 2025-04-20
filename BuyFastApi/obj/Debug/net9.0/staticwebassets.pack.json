@@ -1,0 +1,29 @@
+{
+  "Files": [
+    {
+      "Id": "C:\\Users\\Sh_jonizokov\\Desktop\\BuyFastWebApp\\BuyFastApi\\wwwroot\\5516a4d3-d661-4459-b4c5-31fc0ceb1ff6.png",
+      "PackagePath": "staticwebassets\\5516a4d3-d661-4459-b4c5-31fc0ceb1ff6.png"
+    },
+    {
+      "Id": "obj\\Debug\\net9.0\\staticwebassets\\msbuild.BuyFastApi.Microsoft.AspNetCore.StaticWebAssetEndpoints.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssetEndpoints.props"
+    },
+    {
+      "Id": "obj\\Debug\\net9.0\\staticwebassets\\msbuild.BuyFastApi.Microsoft.AspNetCore.StaticWebAssets.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
+    },
+    {
+      "Id": "obj\\Debug\\net9.0\\staticwebassets\\msbuild.build.BuyFastApi.props",
+      "PackagePath": "build\\BuyFastApi.props"
+    },
+    {
+      "Id": "obj\\Debug\\net9.0\\staticwebassets\\msbuild.buildMultiTargeting.BuyFastApi.props",
+      "PackagePath": "buildMultiTargeting\\BuyFastApi.props"
+    },
+    {
+      "Id": "obj\\Debug\\net9.0\\staticwebassets\\msbuild.buildTransitive.BuyFastApi.props",
+      "PackagePath": "buildTransitive\\BuyFastApi.props"
+    }
+  ],
+  "ElementsToRemove": []
+}

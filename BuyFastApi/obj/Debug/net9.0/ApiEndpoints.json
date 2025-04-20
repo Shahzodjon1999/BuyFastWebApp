@@ -776,16 +776,47 @@
     ]
   },
   {
-    "ContainingType": "BuyFastApi.Controllers.BaseController\u00602[[BuyFastDTO.RequestModels.CreateProductDto, BuyFastDTO, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[BuyFastApi.Models.Product, BuyFastApi, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
-    "Method": "GetAll",
+    "ContainingType": "BuyFastApi.Controllers.ProductsController",
+    "Method": "Create",
     "RelativePath": "api/Products",
-    "HttpMethod": "GET",
+    "HttpMethod": "POST",
     "IsController": true,
     "Order": 0,
-    "Parameters": [],
+    "Parameters": [
+      {
+        "Name": "Id",
+        "Type": "System.Guid",
+        "IsRequired": false
+      },
+      {
+        "Name": "Name",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "Description",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "Price",
+        "Type": "System.Decimal",
+        "IsRequired": false
+      },
+      {
+        "Name": "ImageUrl",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "CategoryId",
+        "Type": "System.Guid",
+        "IsRequired": false
+      }
+    ],
     "ReturnTypes": [
       {
-        "Type": "System.Collections.Generic.IEnumerable\u00601[[BuyFastApi.Models.Product, BuyFastApi, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "Type": "System.String",
         "MediaTypes": [
           "text/plain",
           "application/json",
@@ -797,21 +828,15 @@
   },
   {
     "ContainingType": "BuyFastApi.Controllers.BaseController\u00602[[BuyFastDTO.RequestModels.CreateProductDto, BuyFastDTO, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[BuyFastApi.Models.Product, BuyFastApi, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
-    "Method": "Create",
+    "Method": "GetAll",
     "RelativePath": "api/Products",
-    "HttpMethod": "POST",
+    "HttpMethod": "GET",
     "IsController": true,
     "Order": 0,
-    "Parameters": [
-      {
-        "Name": "request",
-        "Type": "BuyFastDTO.RequestModels.CreateProductDto",
-        "IsRequired": true
-      }
-    ],
+    "Parameters": [],
     "ReturnTypes": [
       {
-        "Type": "System.String",
+        "Type": "System.Collections.Generic.IEnumerable\u00601[[BuyFastApi.Models.Product, BuyFastApi, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
         "MediaTypes": [
           "text/plain",
           "application/json",

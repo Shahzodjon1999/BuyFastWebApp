@@ -65,12 +65,12 @@ public class ProductService : IGenericService<CreateProductDto, Product>
         var _item = _productRepository.GetById(item.Id);
         if (_item is null)
         {
-            return "Doctor is not found";
+            return "Item is not found";
         }
         var mapItem = _mapper.Map<Product>(item);
         mapItem.Id = _item.Id;
         _productRepository.Update(mapItem);
-        return "Doctor is updated";
+        return "Item is updated";
     }
 
     public string Delete(Guid id)
@@ -78,11 +78,11 @@ public class ProductService : IGenericService<CreateProductDto, Product>
         var _item = _productRepository.GetById(id);
         if (_item is null)
         {
-            return "Doctor is not found";
+            return "Item is not found";
         }
         _productRepository.Delete(id);
 
-        return "Doctor is deleted";
+        return "Item is deleted";
     }
 
 }

@@ -3,6 +3,7 @@ using BuyFastApi.Models;
 using BuyFastDTO.RequestModels;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
+using MySqlConnector;
 
 namespace BuyFastApi.Controllers;
 
@@ -23,17 +24,17 @@ public class ProductsController : BaseController<CreateProductDto,Product>
     {
         try
         {
-            // if (!ModelState.IsValid)
-            // {
-            //     return BadRequest(ModelState);
-            // }
+            if (!ModelState.IsValid)
+            {
+                return BadRequest(ModelState);
+            }
 
             // Handle the image upload
             var files = Request.Form.Files;
             if (files.Any())
             {
                 var file = files.First();
-                var uploadsFolderPath = Path.Combine(Directory.GetCurrentDirectory(), "wwwroot", "uploads");
+                var uploadsFolderPath = Path.Combine(Directory.GetCurrentDirectory(), "wwwroot");
 
                 // Ensure the uploads folder exists
                 if (!Directory.Exists(uploadsFolderPath))
@@ -42,7 +43,7 @@ public class ProductsController : BaseController<CreateProductDto,Product>
                 }
 
                 // Generate a unique file name
-                var uniqueFileName = Guid.NewGuid().ToString() + Path.GetExtension(file.FileName);
+                var uniqueFileName = Guid.NewGuid()+ Path.GetExtension(file.FileName);
 
                 // Full path to save the file
                 var filePath = Path.Combine(uploadsFolderPath, uniqueFileName);
@@ -60,13 +61,47 @@ public class ProductsController : BaseController<CreateProductDto,Product>
 
             return _service.Create(userRequest);
         }
-        // catch (SqlException ex)
-        // {
-        //     return StatusCode(500, $"Database error: {ex.Message}");
-        // }
+        catch (MySqlException ex)
+        {
+            return StatusCode(500, $"Database error: {ex.Message}");
+        }
         catch (Exception ex)
         {
             return StatusCode(500, $"Internal server error: {ex.Message}");
+        }
+    }
+
+
+    [HttpGet]
+    public override ActionResult<IEnumerable<Product>> GetAll()
+    {
+        Product productResponse = null;
+        try
+        {
+            var product = _service.GetAll();
+            var baseUrl = $"{Request.Scheme}://{Request.Host}{Request.PathBase}";
+
+            var productResponses = product.Select(productOption => new Product
+            {
+                Id = productOption.Id,
+                Name = productOption.Name,
+                Description = productOption.Description,
+                Price = productOption.Price,
+                StockQuantity = productOption.StockQuantity,
+                ImageUrl = !string.IsNullOrEmpty(productOption.ImageUrl)
+                            ? $"{baseUrl}/{productOption.ImageUrl}"
+                            : null,
+                IsActive = productOption.IsActive,
+                CategoryId = productOption.CategoryId,
+                Reviews = productOption.Reviews,
+                Ratings = productOption.Ratings
+            });
+
+            return Ok(productResponses);
+        }
+        catch (Exception ex)
+        {
+            return StatusCode(500, "Internal server error");
         }
     }
 }

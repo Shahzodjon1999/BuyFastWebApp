@@ -415,3 +415,4 @@ D:\BuyFastWebApp\BuyFastApi\obj\Debug\net9.0\BuyFastApi.pdb
 D:\BuyFastWebApp\BuyFastApi\obj\Debug\net9.0\BuyFastApi.genruntimeconfig.cache
 D:\BuyFastWebApp\BuyFastApi\obj\Debug\net9.0\ref\BuyFastApi.dll
 D:\BuyFastWebApp\BuyFastApi\bin\Debug\net9.0\BuyFastApi.staticwebassets.runtime.json
+C:\Users\Sh_jonizokov\Desktop\BuyFastWebApp\BuyFastApi\bin\Debug\net9.0\BuyFastApi.staticwebassets.runtime.json

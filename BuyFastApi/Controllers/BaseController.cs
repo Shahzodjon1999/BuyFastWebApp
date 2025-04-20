@@ -33,7 +33,7 @@ public abstract class BaseController<TEntityDto,TEntity> : ControllerBase where 
     }
 
     [HttpGet("Id")]
-    public ActionResult<TEntity> GetById(Guid id)
+    public virtual ActionResult<TEntity> GetById(Guid id)
     {
         try
         {

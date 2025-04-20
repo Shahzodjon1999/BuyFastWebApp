@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "lbMeDYt8YvEyOzP6hJ9ixZpXFtpe8BNO2KjVwacFZFA=",
+  "Hash": "YY3D45ktPW4r7XhMdngPIrn1VMM0AA22NcHCySeIrUI=",
   "Source": "BuyFastApi",
   "BasePath": "_content/BuyFastApi",
   "Mode": "Default",
@@ -10,11 +10,116 @@
     {
       "Name": "BuyFastApi\\wwwroot",
       "Source": "BuyFastApi",
-      "ContentRoot": "D:\\BuyFastWebApp\\BuyFastApi\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Sh_jonizokov\\Desktop\\BuyFastWebApp\\BuyFastApi\\wwwroot\\",
       "BasePath": "_content/BuyFastApi",
       "Pattern": "**"
     }
   ],
-  "Assets": [],
-  "Endpoints": []
+  "Assets": [
+    {
+      "Identity": "C:\\Users\\Sh_jonizokov\\Desktop\\BuyFastWebApp\\BuyFastApi\\wwwroot\\5516a4d3-d661-4459-b4c5-31fc0ceb1ff6.png",
+      "SourceId": "BuyFastApi",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Sh_jonizokov\\Desktop\\BuyFastWebApp\\BuyFastApi\\wwwroot\\",
+      "BasePath": "_content/BuyFastApi",
+      "RelativePath": "5516a4d3-d661-4459-b4c5-31fc0ceb1ff6#[.{fingerprint}]?.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "vqkjf3lyoq",
+      "Integrity": "xxov/ZytHzBYHG+plPKrJ+enfG/tfUu0zkVQzkIaJmE=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\5516a4d3-d661-4459-b4c5-31fc0ceb1ff6.png"
+    }
+  ],
+  "Endpoints": [
+    {
+      "Route": "5516a4d3-d661-4459-b4c5-31fc0ceb1ff6.png",
+      "AssetFile": "C:\\Users\\Sh_jonizokov\\Desktop\\BuyFastWebApp\\BuyFastApi\\wwwroot\\5516a4d3-d661-4459-b4c5-31fc0ceb1ff6.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "13804"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"xxov/ZytHzBYHG+plPKrJ+enfG/tfUu0zkVQzkIaJmE=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 20 Apr 2025 10:55:38 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-xxov/ZytHzBYHG+plPKrJ+enfG/tfUu0zkVQzkIaJmE="
+        }
+      ]
+    },
+    {
+      "Route": "5516a4d3-d661-4459-b4c5-31fc0ceb1ff6.vqkjf3lyoq.png",
+      "AssetFile": "C:\\Users\\Sh_jonizokov\\Desktop\\BuyFastWebApp\\BuyFastApi\\wwwroot\\5516a4d3-d661-4459-b4c5-31fc0ceb1ff6.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "13804"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"xxov/ZytHzBYHG+plPKrJ+enfG/tfUu0zkVQzkIaJmE=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 20 Apr 2025 10:55:38 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "vqkjf3lyoq"
+        },
+        {
+          "Name": "label",
+          "Value": "5516a4d3-d661-4459-b4c5-31fc0ceb1ff6.png"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-xxov/ZytHzBYHG+plPKrJ+enfG/tfUu0zkVQzkIaJmE="
+        }
+      ]
+    }
+  ]
 }
