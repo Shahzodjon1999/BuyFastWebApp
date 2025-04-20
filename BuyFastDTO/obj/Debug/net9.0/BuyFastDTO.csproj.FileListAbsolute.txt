@@ -11,3 +11,16 @@ C:\Users\Sh_jonizokov\Desktop\BuyFastWebApp\BuyFastDTO\obj\Debug\net9.0\BuyFastD
 C:\Users\Sh_jonizokov\Desktop\BuyFastWebApp\BuyFastDTO\obj\Debug\net9.0\refint\BuyFastDTO.dll
 C:\Users\Sh_jonizokov\Desktop\BuyFastWebApp\BuyFastDTO\obj\Debug\net9.0\BuyFastDTO.pdb
 C:\Users\Sh_jonizokov\Desktop\BuyFastWebApp\BuyFastDTO\obj\Debug\net9.0\ref\BuyFastDTO.dll
+D:\BuyFastWebApp\BuyFastDTO\bin\Debug\net9.0\BuyFastDTO.deps.json
+D:\BuyFastWebApp\BuyFastDTO\bin\Debug\net9.0\BuyFastDTO.dll
+D:\BuyFastWebApp\BuyFastDTO\bin\Debug\net9.0\BuyFastDTO.pdb
+D:\BuyFastWebApp\BuyFastDTO\obj\Debug\net9.0\BuyFastDTO.csproj.AssemblyReference.cache
+D:\BuyFastWebApp\BuyFastDTO\obj\Debug\net9.0\BuyFastDTO.GeneratedMSBuildEditorConfig.editorconfig
+D:\BuyFastWebApp\BuyFastDTO\obj\Debug\net9.0\BuyFastDTO.AssemblyInfoInputs.cache
+D:\BuyFastWebApp\BuyFastDTO\obj\Debug\net9.0\BuyFastDTO.AssemblyInfo.cs
+D:\BuyFastWebApp\BuyFastDTO\obj\Debug\net9.0\BuyFastDTO.csproj.CoreCompileInputs.cache
+D:\BuyFastWebApp\BuyFastDTO\obj\Debug\net9.0\BuyFastDTO.sourcelink.json
+D:\BuyFastWebApp\BuyFastDTO\obj\Debug\net9.0\BuyFastDTO.dll
+D:\BuyFastWebApp\BuyFastDTO\obj\Debug\net9.0\refint\BuyFastDTO.dll
+D:\BuyFastWebApp\BuyFastDTO\obj\Debug\net9.0\BuyFastDTO.pdb
+D:\BuyFastWebApp\BuyFastDTO\obj\Debug\net9.0\ref\BuyFastDTO.dll

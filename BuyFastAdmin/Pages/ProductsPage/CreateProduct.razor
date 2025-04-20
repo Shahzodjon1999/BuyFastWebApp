@@ -63,10 +63,10 @@
 
 @code {
     private CreateProductDto product = new();
-    private List<CategoryDto> Categories = new();
-    private IBrowserFile? selectedImageFile;
-    private const long maxFileSize = 10 * 1024 * 1024; // 10 MB
+    private List<CategoryDto>? Categories = new();
     private string? errorMessage;
+    private IBrowserFile? selectedFile;
+    private const long maxFileSize = 10242880; // 10 MB
 
     protected override async Task OnInitializedAsync()
     {
@@ -76,9 +76,9 @@
 
             if (!string.IsNullOrEmpty(token))
             {
-                Http.DefaultRequestHeaders.Authorization = new AuthenticationHeaderValue("Bearer", token);
+                _httpClient.DefaultRequestHeaders.Authorization = new AuthenticationHeaderValue("Bearer", token);
             }
-            Categories = await Http.GetFromJsonAsync<List<CategoryDto>>("api/categories");
+            Categories = await _httpClient.GetFromJsonAsync<List<CategoryDto>>("api/categories");
         }
         catch (Exception ex)
         {
@@ -88,54 +88,54 @@
 
     private void HandleImageUpload(InputFileChangeEventArgs e)
     {
-        selectedImageFile = e.File;
+        selectedFile = e.File;
     }
 
     private async Task HandleValidSubmit()
     {
         errorMessage = null;
 
-        if (selectedImageFile != null)
+        if (selectedFile != null)
         {
             try
             {
                 var content = new MultipartFormDataContent();
-                var stream = selectedImageFile.OpenReadStream(maxFileSize);
-                content.Add(new StreamContent(stream), "image", selectedImageFile.Name);
 
-                var uploadResponse = await Http.PostAsync("api/upload", content);
-                if (uploadResponse.IsSuccessStatusCode)
-                {
-                    product.ImageUrl = await uploadResponse.Content.ReadAsStringAsync();
+                content.Add(new StringContent(product.Name), nameof(product.Name));
+                content.Add(new StringContent(product.Description), nameof(product.Description));
+                content.Add(new StringContent(product.Price.ToString()), nameof(product.Price));
+                content.Add(new StringContent(product.CategoryId.ToString()), nameof(product.CategoryId));
+                
+                var fileContent = new StreamContent(selectedFile.OpenReadStream(maxFileSize));
+                fileContent.Headers.ContentType = new MediaTypeHeaderValue(selectedFile.ContentType);
+                content.Add(fileContent, nameof(product.ImageUrl), selectedFile.Name);
+
+                try
+                {   var token = await _authenticationStateProvider.GetToken();
+
+                    if (!string.IsNullOrEmpty(token))
+                    {
+                        _httpClient.DefaultRequestHeaders.Authorization = new AuthenticationHeaderValue("Bearer", token);
+                        var response = await _httpClient.PostAsJsonAsync("api/Products", product);
+                        if (response.IsSuccessStatusCode)
+                        {
+                            Navigation.NavigateTo("/products");
+                        }
+                        else
+                        {
+                            errorMessage = "Product creation failed.";
+                        }
+                    }
                 }
-                else
+                catch (Exception ex)
                 {
-                    errorMessage = "Image upload failed.";
-                    return;
+                    errorMessage = $"Product creation error: {ex.Message}";
                 }
             }
             catch (Exception ex)
             {
                 errorMessage = $"Image upload error: {ex.Message}";
-                return;
             }
-        }
-
-        try
-        {
-            var response = await Http.PostAsJsonAsync("api/products", product);
-            if (response.IsSuccessStatusCode)
-            {
-                Navigation.NavigateTo("/products");
-            }
-            else
-            {
-                errorMessage = "Product creation failed.";
-            }
-        }
-        catch (Exception ex)
-        {
-            errorMessage = $"Product creation error: {ex.Message}";
         }
     }
 }

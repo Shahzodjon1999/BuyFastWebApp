@@ -23,4 +23,8 @@
       <ProjectReference Include="..\BuyFastDTO\BuyFastDTO.csproj" />
     </ItemGroup>
 
+    <ItemGroup>
+      <Folder Include="wwwroot\uploads\" />
+    </ItemGroup>
+
 </Project>

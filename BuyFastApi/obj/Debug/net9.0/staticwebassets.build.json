@@ -1,12 +1,20 @@
 {
   "Version": 1,
-  "Hash": "R/pV6u3+p7UHk9hb+vV0bYsg2N6g/OMtNkEmvGR0zow=",
+  "Hash": "lbMeDYt8YvEyOzP6hJ9ixZpXFtpe8BNO2KjVwacFZFA=",
   "Source": "BuyFastApi",
   "BasePath": "_content/BuyFastApi",
   "Mode": "Default",
   "ManifestType": "Build",
   "ReferencedProjectsConfiguration": [],
-  "DiscoveryPatterns": [],
+  "DiscoveryPatterns": [
+    {
+      "Name": "BuyFastApi\\wwwroot",
+      "Source": "BuyFastApi",
+      "ContentRoot": "D:\\BuyFastWebApp\\BuyFastApi\\wwwroot\\",
+      "BasePath": "_content/BuyFastApi",
+      "Pattern": "**"
+    }
+  ],
   "Assets": [],
   "Endpoints": []
 }
