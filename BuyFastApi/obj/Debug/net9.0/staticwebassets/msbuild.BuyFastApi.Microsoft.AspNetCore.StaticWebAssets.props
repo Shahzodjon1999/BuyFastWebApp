@@ -1,5 +1,23 @@
 ﻿<Project>
   <ItemGroup>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\08460f57-735c-4634-aa4a-07c7382c5898.jpg'))">
+      <SourceType>Package</SourceType>
+      <SourceId>BuyFastApi</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/BuyFastApi</BasePath>
+      <RelativePath>08460f57-735c-4634-aa4a-07c7382c5898.jpg</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <Fingerprint>qcxyqjtrd7</Fingerprint>
+      <Integrity>pgxkdp5cZVSYZMV3VkYW5TwBFNXLY5WPrnMHrVGkL6Y=</Integrity>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\08460f57-735c-4634-aa4a-07c7382c5898.jpg'))</OriginalItemSpec>
+    </StaticWebAsset>
     <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\5516a4d3-d661-4459-b4c5-31fc0ceb1ff6.png'))">
       <SourceType>Package</SourceType>
       <SourceId>BuyFastApi</SourceId>

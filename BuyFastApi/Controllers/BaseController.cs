@@ -6,18 +6,18 @@ using MySqlConnector;
 namespace BuyFastApi.Controllers;
 [Authorize]
 [ApiController]
-public abstract class BaseController<TEntityDto,TEntity> : ControllerBase where TEntityDto :class where TEntity : class
+public abstract class BaseController<TRequest,TUpdate,TResponse> : ControllerBase where TRequest :class where TResponse : class where TUpdate : class
 {
     protected readonly ILogger<ControllerBase> _logger;
-    protected readonly IGenericService<TEntityDto, TEntity> _services;
-    public BaseController(ILogger<ControllerBase> logger,IGenericService<TEntityDto, TEntity> services)
+    protected readonly IGenericService<TRequest, TUpdate, TResponse> _services;
+    public BaseController(ILogger<ControllerBase> logger,IGenericService<TRequest, TUpdate, TResponse> services)
     {
         _logger = logger;
         _services = services;
     }
 
     [HttpGet]
-    public virtual ActionResult<IEnumerable<TEntity>> GetAll()
+    public virtual ActionResult<IEnumerable<TResponse>> GetAll()
     {
         try
         {
@@ -33,7 +33,7 @@ public abstract class BaseController<TEntityDto,TEntity> : ControllerBase where 
     }
 
     [HttpGet("Id")]
-    public virtual ActionResult<TEntity> GetById(Guid id)
+    public virtual ActionResult<TResponse> GetById(Guid id)
     {
         try
         {
@@ -49,7 +49,7 @@ public abstract class BaseController<TEntityDto,TEntity> : ControllerBase where 
     }
 
     [HttpPost]
-    public virtual ActionResult<string> Create([FromBody] TEntityDto request)
+    public virtual ActionResult<string> Create([FromBody] TRequest request)
     {
         try
         {
@@ -66,7 +66,7 @@ public abstract class BaseController<TEntityDto,TEntity> : ControllerBase where 
     }
 
     [HttpPut]
-    public ActionResult<string> Update(TEntityDto updateRequest)
+    public virtual ActionResult<string> Update(TUpdate updateRequest)
     {
         try
         {

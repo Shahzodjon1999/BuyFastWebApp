@@ -7,6 +7,7 @@ using BuyFastApi.Repositories;
 using BuyFastApi.Services;
 using BuyFastDTO;
 using BuyFastDTO.RequestModels;
+using BuyFastDTO.ResponseModel;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Options;
 using Swashbuckle.AspNetCore.SwaggerGen;
@@ -27,8 +28,8 @@ public static class ConfigurationServices
         services.AddTransient<ICategoryRepository,CategoryRepository>();
         services.AddTransient<IProductRepository,ProductRepository>();
         
-        services.AddTransient<IGenericService<CategoryDto,Category>,CategoryService>();
-        services.AddTransient<IGenericService<CreateProductDto,Product>,ProductService>();
+        services.AddTransient<IGenericService<CategoryRequest,CategoryResponse,Category>,CategoryService>();
+        services.AddTransient<IGenericService<ProductRequest,ProductResponse,Product>,ProductService>();
         
         //adding custom Auth
         services.AddAuthToken();

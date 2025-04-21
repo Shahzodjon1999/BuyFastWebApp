@@ -1,14 +1,14 @@
 namespace BuyFastApi.InterfaceServices;
 
-public interface IGenericService<TEntityDto,TResponse> where TEntityDto : class  where TResponse : class
+public interface IGenericService<TRequest,TUpdate,TResponse> where TRequest : class  where TResponse : class where TUpdate : class
 {
-    string Create(TEntityDto item); 
+    string Create(TRequest item); 
 
     IEnumerable<TResponse> GetAll();
 
     TResponse GetById(Guid id);
 
-    string Update(TEntityDto item);
+    string Update(TUpdate item);
 
     string Delete(Guid id);
 }

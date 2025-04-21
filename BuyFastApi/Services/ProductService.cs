@@ -7,7 +7,7 @@ using BuyFastDTO.RequestModels;
 
 namespace BuyFastApi.Services;
 
-public class ProductService : IGenericService<CreateProductDto, Product>
+public class ProductService : IGenericService<ProductRequest,ProductResponse,Product>
 {
     private readonly IProductRepository _productRepository;
     private readonly IMapper _mapper;
@@ -16,7 +16,7 @@ public class ProductService : IGenericService<CreateProductDto, Product>
         _productRepository = productRepository;
         _mapper = mapper;
     }
-    public string Create(CreateProductDto item)
+    public string Create(ProductRequest item)
     {
         if (string.IsNullOrEmpty(item.Name))
         {
@@ -60,7 +60,7 @@ public class ProductService : IGenericService<CreateProductDto, Product>
         }
     }
 
-    public string Update(CreateProductDto item)
+    public string Update(ProductResponse item)
     {
         var _item = _productRepository.GetById(item.Id);
         if (_item is null)
@@ -84,5 +84,4 @@ public class ProductService : IGenericService<CreateProductDto, Product>
 
         return "Item is deleted";
     }
-
 }

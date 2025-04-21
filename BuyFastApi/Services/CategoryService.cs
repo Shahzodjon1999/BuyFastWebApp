@@ -2,11 +2,12 @@ using AutoMapper;
 using BuyFastApi.InterfaceRepositoryes;
 using BuyFastApi.InterfaceServices;
 using BuyFastApi.Models;
-using BuyFastDTO;
+using BuyFastDTO.RequestModels;
+using BuyFastDTO.ResponseModel;
 
 namespace BuyFastApi.Services;
 
-public class CategoryService: IGenericService<CategoryDto, Category>
+public class CategoryService: IGenericService<CategoryRequest,CategoryResponse,Category>
 {
     private readonly ICategoryRepository _categoryRepository;
     private readonly IMapper _mapper;
@@ -16,7 +17,7 @@ public class CategoryService: IGenericService<CategoryDto, Category>
         _mapper = mapper;
     }
 
-    public string Create(CategoryDto item)
+    public string Create(CategoryRequest item)
     {
         if (string.IsNullOrEmpty(item.Name))
         {
@@ -60,7 +61,7 @@ public class CategoryService: IGenericService<CategoryDto, Category>
         }
     }
 
-    public string Update(CategoryDto item)
+    public string Update(CategoryResponse item)
     {
         var _item = _categoryRepository.GetById(item.Id);
         if (_item is null)
@@ -84,5 +85,4 @@ public class CategoryService: IGenericService<CategoryDto, Category>
 
         return "Item is deleted";
     }
-
 }

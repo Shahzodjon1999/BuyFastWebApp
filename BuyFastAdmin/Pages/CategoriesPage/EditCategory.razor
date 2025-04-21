@@ -1,9 +1,7 @@
 ﻿@page "/admin/categories/edit/{Id:guid}"
-@using BuyFastDTO
 @using System.Net.Http.Headers
-@inject HttpClient Http
-@inject NavigationManager NavManager
-
+@using BuyFastDTO.RequestModels
+@using BuyFastDTO.ResponseModel
 <h3>Редактировать категорию</h3>
 
 @if (categoryModel != null)
@@ -29,9 +27,9 @@ else
     [Parameter]
     public Guid Id { get; set; }
     [Inject]
-    private CustomAuthenticationStateProvider authenticationStateProvider { get; set; }
-    private string authToken;
-    private CategoryDto categoryModel = new();
+    private CustomAuthenticationStateProvider? authenticationStateProvider { get; set; }
+    private string? authToken;
+    private CategoryResponse categoryModel = new();
 
     protected override async Task OnInitializedAsync()
     {
@@ -39,7 +37,7 @@ else
         if (authToken != null)
         {
             _httpClient.DefaultRequestHeaders.Authorization = new AuthenticationHeaderValue("Bearer", authToken);
-            var response = await _httpClient.GetFromJsonAsync<CategoryDto>($"api/Categories/Id?id={Id}");
+            var response = await _httpClient.GetFromJsonAsync<CategoryResponse>($"api/Categories/Id?id={Id}");
             if (response != null)
             {
                 categoryModel = response;
@@ -60,7 +58,7 @@ else
             var result = await _httpClient.PutAsJsonAsync($"api/Categories", categoryModel);
             if (result.IsSuccessStatusCode)
             {
-                NavManager.NavigateTo("/categories");
+                _navigationManager.NavigateTo("/categories");
             }
             else
             {

@@ -1,6 +1,6 @@
 namespace BuyFastDTO.RequestModels;
 
-public class CreateProductDto
+public class ProductRequest
 {
     public Guid Id { get; set; }
     public string Name { get; set; }=string.Empty;

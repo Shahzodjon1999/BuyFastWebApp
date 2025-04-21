@@ -1,8 +1,9 @@
 ﻿@page "/editeproduct/{id:guid}"
+@using System.Net
 @using System.Net.Http.Headers
 @using BuyFastDTO
-@inject HttpClient Http
-@inject NavigationManager Navigation
+@using BuyFastDTO.RequestModels
+@using System.Globalization
 @inject CustomAuthenticationStateProvider _authenticationStateProvider
 
 <h3>Edit Product</h3>
@@ -20,24 +21,26 @@ else
                 <ValidationSummary />
 
                 <div class="mb-3">
-                    <label for="productName" class="form-label">Name</label>
+                    <label for="productName" class="form-label">Названия</label>
                     <InputText id="productName" @bind-Value="product.Name" class="form-control" />
                 </div>
 
                 <div class="mb-3">
-                    <label for="productDescription" class="form-label">Description</label>
+                    <label for="productDescription" class="form-label">Описание</label>
                     <InputTextArea id="productDescription" @bind-Value="product.Description" class="form-control" />
                 </div>
 
                 <div class="mb-3">
-                    <label for="productPrice" class="form-label">Price</label>
-                    <InputNumber id="productPrice"  @bind-Value="product.Price" class="form-control" />
+                    <label for="productPrice" class="form-label">Цена</label>
+                    <InputText id="productPrice" class="form-control"
+                               @bind-Value="formattedPrice"
+                               @bind-Value:event="oninput" />
                 </div>
 
                 <div class="mb-3">
-                    <label for="productCategory" class="form-label">Category</label>
+                    <label for="productCategory" class="form-label">Категория</label>
                     <InputSelect id="productCategory" @bind-Value="product.CategoryId" class="form-select">
-                        <option value="">-- Select Category --</option>
+                        <option value="">-- Выберите категорию --</option>
                         @foreach (var category in Categories)
                         {
                             <option value="@category.Id">@category.Name</option>
@@ -45,29 +48,12 @@ else
                     </InputSelect>
                 </div>
 
-                <div class="mb-3">
-                    <label class="form-label">Current Image</label><br />
-                    @if (!string.IsNullOrEmpty(product.ImageUrl))
-                    {
-                        <img src="@product.ImageUrl" alt="Product Image" class="img-thumbnail" style="max-width: 200px;" />
-                    }
-                    else
-                    {
-                        <p>No image uploaded.</p>
-                    }
-                </div>
-
-                <div class="mb-3">
-                    <label for="productImage" class="form-label">Replace Image</label>
-                    <InputFile id="productImage" OnChange="HandleImageUpload" class="form-control" />
-                </div>
-
                 @if (!string.IsNullOrEmpty(errorMessage))
                 {
                     <div class="alert alert-danger">@errorMessage</div>
                 }
 
-                <button type="submit" class="btn btn-primary">Save Changes</button>
+                <button type="submit" class="btn btn-primary">Сохранить</button>
             </EditForm>
         </div>
     </div>
@@ -75,8 +61,8 @@ else
 
 @code {
     [Parameter] public Guid id { get; set; }
-    private ProductDto? product;
-    private List<CategoryDto> Categories = new();
+    private ProductResponse? product;
+    private List<CategoryRequest>? Categories = new();
     private IBrowserFile? selectedFile;
     private string? errorMessage;
     private const long maxFileSize = 10242880;
@@ -87,16 +73,11 @@ else
 
         if (!string.IsNullOrEmpty(token))
         {
-            Http.DefaultRequestHeaders.Authorization = new AuthenticationHeaderValue("Bearer", token);
+            _httpClient.DefaultRequestHeaders.Authorization = new AuthenticationHeaderValue("Bearer", token);
         }
 
-        product = await Http.GetFromJsonAsync<ProductDto>($"api/Products/Id?id={id}");
-        Categories = await Http.GetFromJsonAsync<List<CategoryDto>>("api/categories");
-    }
-
-    private void HandleImageUpload(InputFileChangeEventArgs e)
-    {
-        selectedFile = e.File;
+        product = await _httpClient.GetFromJsonAsync<ProductResponse>($"api/Products/Id?id={id}");
+        Categories = await _httpClient.GetFromJsonAsync<List<CategoryRequest>>("api/categories");
     }
 
     private async Task HandleValidSubmit()
@@ -107,26 +88,13 @@ else
 
             if (!string.IsNullOrEmpty(token))
             {
-                Http.DefaultRequestHeaders.Authorization = new AuthenticationHeaderValue("Bearer", token);
+                _httpClient.DefaultRequestHeaders.Authorization = new AuthenticationHeaderValue("Bearer", token);
 
-                var content = new MultipartFormDataContent();
-                content.Add(new StringContent(product.Name), nameof(product.Name));
-                content.Add(new StringContent(product.Description), nameof(product.Description));
-                content.Add(new StringContent(product.Price.ToString()), nameof(product.Price));
-                content.Add(new StringContent(product.CategoryId.ToString()), nameof(product.CategoryId));
-
-                if (selectedFile != null)
-                {
-                    var fileContent = new StreamContent(selectedFile.OpenReadStream(maxFileSize));
-                    fileContent.Headers.ContentType = new MediaTypeHeaderValue(selectedFile.ContentType);
-                    content.Add(fileContent, nameof(product.ImageUrl), selectedFile.Name);
-                }
-
-                var response = await Http.PutAsync($"api/products/{product.Id}", content);
+                var response = await _httpClient.PutAsJsonAsync($"api/Products", product);
 
                 if (response.IsSuccessStatusCode)
                 {
-                    Navigation.NavigateTo("/homeproduct");
+                    _navigationManager.NavigateTo("/homeproduct");
                 }
                 else
                 {
@@ -137,6 +105,17 @@ else
         catch (Exception ex)
         {
             errorMessage = $"Exception: {ex.Message}";
+        }
+    }
+    private string formattedPrice
+    {
+        get => product?.Price.ToString("0.00", CultureInfo.InvariantCulture) ?? string.Empty;
+        set
+        {
+            if (decimal.TryParse(value, NumberStyles.Any, CultureInfo.InvariantCulture, out var result) && product != null)
+            {
+                product.Price = result;
+            }
         }
     }
 }

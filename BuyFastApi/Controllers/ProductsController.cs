@@ -1,5 +1,6 @@
 using BuyFastApi.InterfaceServices;
 using BuyFastApi.Models;
+using BuyFastDTO;
 using BuyFastDTO.RequestModels;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
@@ -9,18 +10,18 @@ namespace BuyFastApi.Controllers;
 
 [Authorize]
 [Route("api/[controller]")]
-public class ProductsController : BaseController<CreateProductDto,Product>
+public class ProductsController : BaseController<ProductRequest,ProductResponse,Product>
 {
-    private readonly IGenericService<CreateProductDto, Product> _service;
+    private readonly IGenericService<ProductRequest, ProductResponse, Product> _service;
 
-    public ProductsController(ILogger<ProductsController> logger, IGenericService<CreateProductDto, Product> service)
+    public ProductsController(ILogger<ProductsController> logger, IGenericService<ProductRequest, ProductResponse, Product> service)
         : base(logger, service)
     {
         _service = service;
     }
     
     [HttpPost]
-    public override ActionResult<string> Create([FromForm] CreateProductDto userRequest)
+    public override ActionResult<string> Create([FromForm] ProductRequest userRequest)
     {
         try
         {

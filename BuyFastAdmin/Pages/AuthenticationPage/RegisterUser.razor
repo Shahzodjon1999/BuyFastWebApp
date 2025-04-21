@@ -35,16 +35,16 @@
     </div>
 </div>
 @code {
-    private CreateUserModel clientRequest = new CreateUserModel();
+    private UserRequest clientRequest = new UserRequest();
     protected async Task Create()
     {
         try
         {
-            var response = await _httpClient.PostAsJsonAsync<CreateUserModel>("api/Client", clientRequest);
+            var response = await _httpClient.PostAsJsonAsync<UserRequest>("api/Client", clientRequest);
             if (response.IsSuccessStatusCode)
             {
                 await _js.InvokeVoidAsync("alert", "Seccessfull save your data");
-                clientRequest = new CreateUserModel();
+                clientRequest = new UserRequest();
             }
             else
             {

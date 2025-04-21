@@ -2,6 +2,7 @@
 @using System.Net.Http.Headers
 @using BuyFastDTO
 @using BuyFastDTO.RequestModels
+@using BuyFastDTO.ResponseModel
 @inject HttpClient Http
 @inject NavigationManager Navigation
 
@@ -62,8 +63,8 @@
 </div>
 
 @code {
-    private CreateProductDto product = new();
-    private List<CategoryDto>? Categories = new();
+    private ProductRequest product = new();
+    private List<CategoryResponse>? Categories = new();
     private string? errorMessage;
     private IBrowserFile? selectedFile;
     private const long maxFileSize = 10242880; // 10 MB
@@ -78,7 +79,7 @@
             {
                 _httpClient.DefaultRequestHeaders.Authorization = new AuthenticationHeaderValue("Bearer", token);
             }
-            Categories = await _httpClient.GetFromJsonAsync<List<CategoryDto>>("api/categories");
+            Categories = await _httpClient.GetFromJsonAsync<List<CategoryResponse>>("api/categories");
         }
         catch (Exception ex)
         {

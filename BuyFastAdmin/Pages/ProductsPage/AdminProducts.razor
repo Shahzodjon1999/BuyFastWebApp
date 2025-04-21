@@ -35,7 +35,7 @@ else
     private CustomAuthenticationStateProvider? authenticationStateProvider { get; set; }
 
     private string? authToken;
-    private List<ProductDto>? productlist = new();
+    private List<ProductResponse>? productlist = new();
 
     protected override async Task OnInitializedAsync()
     {
@@ -43,7 +43,7 @@ else
         if (authToken != null)
         {
             _httpClient.DefaultRequestHeaders.Authorization = new AuthenticationHeaderValue("Bearer", authToken);
-            productlist = await _httpClient.GetFromJsonAsync<List<ProductDto>>("api/Products");
+            productlist = await _httpClient.GetFromJsonAsync<List<ProductResponse>>("api/Products");
         }
     }
 
@@ -56,7 +56,7 @@ else
             var response = await _httpClient.DeleteAsync($"api/Products?id={id}");
             if (response.IsSuccessStatusCode)
             {
-                productlist = await _httpClient.GetFromJsonAsync<List<ProductDto>>("api/products");
+                productlist = await _httpClient.GetFromJsonAsync<List<ProductResponse>>("api/products");
             }
             else
             {

@@ -1,5 +1,17 @@
 ﻿<Project>
   <ItemGroup>
+    <StaticWebAssetEndpoint Include="_content/BuyFastApi/08460f57-735c-4634-aa4a-07c7382c5898.jpg">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\08460f57-735c-4634-aa4a-07c7382c5898.jpg'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-pgxkdp5cZVSYZMV3VkYW5TwBFNXLY5WPrnMHrVGkL6Y="}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=3600, must-revalidate"},{"Name":"Content-Length","Value":"5353"},{"Name":"Content-Type","Value":"image/jpeg"},{"Name":"ETag","Value":"\u0022pgxkdp5cZVSYZMV3VkYW5TwBFNXLY5WPrnMHrVGkL6Y=\u0022"},{"Name":"Last-Modified","Value":"Sun, 20 Apr 2025 11:50:35 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/BuyFastApi/08460f57-735c-4634-aa4a-07c7382c5898.qcxyqjtrd7.jpg">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\08460f57-735c-4634-aa4a-07c7382c5898.jpg'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"qcxyqjtrd7"},{"Name":"integrity","Value":"sha256-pgxkdp5cZVSYZMV3VkYW5TwBFNXLY5WPrnMHrVGkL6Y="},{"Name":"label","Value":"_content/BuyFastApi/08460f57-735c-4634-aa4a-07c7382c5898.jpg"}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"5353"},{"Name":"Content-Type","Value":"image/jpeg"},{"Name":"ETag","Value":"\u0022pgxkdp5cZVSYZMV3VkYW5TwBFNXLY5WPrnMHrVGkL6Y=\u0022"},{"Name":"Last-Modified","Value":"Sun, 20 Apr 2025 11:50:35 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
     <StaticWebAssetEndpoint Include="_content/BuyFastApi/5516a4d3-d661-4459-b4c5-31fc0ceb1ff6.png">
       <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\5516a4d3-d661-4459-b4c5-31fc0ceb1ff6.png'))</AssetFile>
       <Selectors><![CDATA[[]]]></Selectors>

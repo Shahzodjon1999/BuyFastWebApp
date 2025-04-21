@@ -158,17 +158,17 @@
           "content": {
             "application/json": {
               "schema": {
-                "$ref": "#/components/schemas/CartItemDto"
+                "$ref": "#/components/schemas/CardItemResponse"
               }
             },
             "text/json": {
               "schema": {
-                "$ref": "#/components/schemas/CartItemDto"
+                "$ref": "#/components/schemas/CardItemResponse"
               }
             },
             "application/*+json": {
               "schema": {
-                "$ref": "#/components/schemas/CartItemDto"
+                "$ref": "#/components/schemas/CardItemResponse"
               }
             }
           }
@@ -364,17 +364,17 @@
           "content": {
             "application/json": {
               "schema": {
-                "$ref": "#/components/schemas/CartDto"
+                "$ref": "#/components/schemas/CartResponse"
               }
             },
             "text/json": {
               "schema": {
-                "$ref": "#/components/schemas/CartDto"
+                "$ref": "#/components/schemas/CartResponse"
               }
             },
             "application/*+json": {
               "schema": {
-                "$ref": "#/components/schemas/CartDto"
+                "$ref": "#/components/schemas/CartResponse"
               }
             }
           }
@@ -524,17 +524,17 @@
           "content": {
             "application/json": {
               "schema": {
-                "$ref": "#/components/schemas/CategoryDto"
+                "$ref": "#/components/schemas/CategoryRequest"
               }
             },
             "text/json": {
               "schema": {
-                "$ref": "#/components/schemas/CategoryDto"
+                "$ref": "#/components/schemas/CategoryRequest"
               }
             },
             "application/*+json": {
               "schema": {
-                "$ref": "#/components/schemas/CategoryDto"
+                "$ref": "#/components/schemas/CategoryRequest"
               }
             }
           }
@@ -570,17 +570,17 @@
           "content": {
             "application/json": {
               "schema": {
-                "$ref": "#/components/schemas/CategoryDto"
+                "$ref": "#/components/schemas/CategoryResponse"
               }
             },
             "text/json": {
               "schema": {
-                "$ref": "#/components/schemas/CategoryDto"
+                "$ref": "#/components/schemas/CategoryResponse"
               }
             },
             "application/*+json": {
               "schema": {
-                "$ref": "#/components/schemas/CategoryDto"
+                "$ref": "#/components/schemas/CategoryResponse"
               }
             }
           }
@@ -776,17 +776,17 @@
           "content": {
             "application/json": {
               "schema": {
-                "$ref": "#/components/schemas/OrderDto"
+                "$ref": "#/components/schemas/OrderItemResponse"
               }
             },
             "text/json": {
               "schema": {
-                "$ref": "#/components/schemas/OrderDto"
+                "$ref": "#/components/schemas/OrderItemResponse"
               }
             },
             "application/*+json": {
               "schema": {
-                "$ref": "#/components/schemas/OrderDto"
+                "$ref": "#/components/schemas/OrderItemResponse"
               }
             }
           }
@@ -982,17 +982,17 @@
           "content": {
             "application/json": {
               "schema": {
-                "$ref": "#/components/schemas/OrderDto"
+                "$ref": "#/components/schemas/OrderResponse"
               }
             },
             "text/json": {
               "schema": {
-                "$ref": "#/components/schemas/OrderDto"
+                "$ref": "#/components/schemas/OrderResponse"
               }
             },
             "application/*+json": {
               "schema": {
-                "$ref": "#/components/schemas/OrderDto"
+                "$ref": "#/components/schemas/OrderResponse"
               }
             }
           }
@@ -1188,17 +1188,17 @@
           "content": {
             "application/json": {
               "schema": {
-                "$ref": "#/components/schemas/PaymentDto"
+                "$ref": "#/components/schemas/PaymentResponse"
               }
             },
             "text/json": {
               "schema": {
-                "$ref": "#/components/schemas/PaymentDto"
+                "$ref": "#/components/schemas/PaymentResponse"
               }
             },
             "application/*+json": {
               "schema": {
-                "$ref": "#/components/schemas/PaymentDto"
+                "$ref": "#/components/schemas/PaymentResponse"
               }
             }
           }
@@ -1427,17 +1427,17 @@
           "content": {
             "application/json": {
               "schema": {
-                "$ref": "#/components/schemas/CreateProductDto"
+                "$ref": "#/components/schemas/ProductResponse"
               }
             },
             "text/json": {
               "schema": {
-                "$ref": "#/components/schemas/CreateProductDto"
+                "$ref": "#/components/schemas/ProductResponse"
               }
             },
             "application/*+json": {
               "schema": {
-                "$ref": "#/components/schemas/CreateProductDto"
+                "$ref": "#/components/schemas/ProductResponse"
               }
             }
           }
@@ -1633,17 +1633,17 @@
           "content": {
             "application/json": {
               "schema": {
-                "$ref": "#/components/schemas/ReviewDto"
+                "$ref": "#/components/schemas/ReviewResponse"
               }
             },
             "text/json": {
               "schema": {
-                "$ref": "#/components/schemas/ReviewDto"
+                "$ref": "#/components/schemas/ReviewResponse"
               }
             },
             "application/*+json": {
               "schema": {
-                "$ref": "#/components/schemas/ReviewDto"
+                "$ref": "#/components/schemas/ReviewResponse"
               }
             }
           }
@@ -1839,17 +1839,17 @@
           "content": {
             "application/json": {
               "schema": {
-                "$ref": "#/components/schemas/UserProfileDto"
+                "$ref": "#/components/schemas/UserProfileResponse"
               }
             },
             "text/json": {
               "schema": {
-                "$ref": "#/components/schemas/UserProfileDto"
+                "$ref": "#/components/schemas/UserProfileResponse"
               }
             },
             "application/*+json": {
               "schema": {
-                "$ref": "#/components/schemas/UserProfileDto"
+                "$ref": "#/components/schemas/UserProfileResponse"
               }
             }
           }
@@ -2045,17 +2045,17 @@
           "content": {
             "application/json": {
               "schema": {
-                "$ref": "#/components/schemas/UserDto"
+                "$ref": "#/components/schemas/UserResponse"
               }
             },
             "text/json": {
               "schema": {
-                "$ref": "#/components/schemas/UserDto"
+                "$ref": "#/components/schemas/UserResponse"
               }
             },
             "application/*+json": {
               "schema": {
-                "$ref": "#/components/schemas/UserDto"
+                "$ref": "#/components/schemas/UserResponse"
               }
             }
           }
@@ -2251,17 +2251,17 @@
           "content": {
             "application/json": {
               "schema": {
-                "$ref": "#/components/schemas/WishlistDto"
+                "$ref": "#/components/schemas/WishlistItemsResponse"
               }
             },
             "text/json": {
               "schema": {
-                "$ref": "#/components/schemas/WishlistDto"
+                "$ref": "#/components/schemas/WishlistItemsResponse"
               }
             },
             "application/*+json": {
               "schema": {
-                "$ref": "#/components/schemas/WishlistDto"
+                "$ref": "#/components/schemas/WishlistItemsResponse"
               }
             }
           }
@@ -2457,17 +2457,17 @@
           "content": {
             "application/json": {
               "schema": {
-                "$ref": "#/components/schemas/WishlistDto"
+                "$ref": "#/components/schemas/WishlistResponse"
               }
             },
             "text/json": {
               "schema": {
-                "$ref": "#/components/schemas/WishlistDto"
+                "$ref": "#/components/schemas/WishlistResponse"
               }
             },
             "application/*+json": {
               "schema": {
-                "$ref": "#/components/schemas/WishlistDto"
+                "$ref": "#/components/schemas/WishlistResponse"
               }
             }
           }
@@ -2575,6 +2575,10 @@
   },
   "components": {
     "schemas": {
+      "CardItemResponse": {
+        "type": "object",
+        "additionalProperties": false
+      },
       "Cart": {
         "type": "object",
         "properties": {
@@ -2688,6 +2692,10 @@
         },
         "additionalProperties": false
       },
+      "CartResponse": {
+        "type": "object",
+        "additionalProperties": false
+      },
       "Category": {
         "type": "object",
         "properties": {
@@ -2726,7 +2734,7 @@
         },
         "additionalProperties": false
       },
-      "CategoryDto": {
+      "CategoryRequest": {
         "type": "object",
         "properties": {
           "id": {
@@ -2740,7 +2748,7 @@
         },
         "additionalProperties": false
       },
-      "CreateProductDto": {
+      "CategoryResponse": {
         "type": "object",
         "properties": {
           "id": {
@@ -2751,21 +2759,14 @@
             "type": "string",
             "nullable": true
           },
-          "description": {
+          "parentCategoryId": {
             "type": "string",
+            "format": "uuid",
             "nullable": true
           },
-          "price": {
-            "type": "number",
-            "format": "double"
-          },
-          "imageUrl": {
+          "createdAt": {
             "type": "string",
-            "nullable": true
-          },
-          "categoryId": {
-            "type": "string",
-            "format": "uuid"
+            "format": "date-time"
           }
         },
         "additionalProperties": false
@@ -2911,6 +2912,14 @@
         },
         "additionalProperties": false
       },
+      "OrderItemResponse": {
+        "type": "object",
+        "additionalProperties": false
+      },
+      "OrderResponse": {
+        "type": "object",
+        "additionalProperties": false
+      },
       "Payment": {
         "type": "object",
         "properties": {
@@ -2969,6 +2978,10 @@
             "format": "date-time"
           }
         },
+        "additionalProperties": false
+      },
+      "PaymentResponse": {
+        "type": "object",
         "additionalProperties": false
       },
       "Product": {
@@ -3030,6 +3043,36 @@
               "$ref": "#/components/schemas/Rating"
             },
             "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "ProductResponse": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "string",
+            "format": "uuid"
+          },
+          "name": {
+            "type": "string",
+            "nullable": true
+          },
+          "description": {
+            "type": "string",
+            "nullable": true
+          },
+          "imageUrl": {
+            "type": "string",
+            "nullable": true
+          },
+          "price": {
+            "type": "number",
+            "format": "double"
+          },
+          "categoryId": {
+            "type": "string",
+            "format": "uuid"
           }
         },
         "additionalProperties": false
@@ -3157,6 +3200,10 @@
             "format": "uuid"
           }
         },
+        "additionalProperties": false
+      },
+      "ReviewResponse": {
+        "type": "object",
         "additionalProperties": false
       },
       "User": {
@@ -3311,6 +3358,14 @@
         },
         "additionalProperties": false
       },
+      "UserProfileResponse": {
+        "type": "object",
+        "additionalProperties": false
+      },
+      "UserResponse": {
+        "type": "object",
+        "additionalProperties": false
+      },
       "Wishlist": {
         "type": "object",
         "properties": {
@@ -3414,6 +3469,14 @@
             "format": "uuid"
           }
         },
+        "additionalProperties": false
+      },
+      "WishlistItemsResponse": {
+        "type": "object",
+        "additionalProperties": false
+      },
+      "WishlistResponse": {
+        "type": "object",
         "additionalProperties": false
       }
     },
