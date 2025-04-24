@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("BuyFastApi")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+e9aff405ff49568f000e77e41cd3909260261cd5")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+f67c0422e6e59b5c830671ed37e19f167b0d31af")]
 [assembly: System.Reflection.AssemblyProductAttribute("BuyFastApi")]
 [assembly: System.Reflection.AssemblyTitleAttribute("BuyFastApi")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

@@ -33,8 +33,7 @@ else
                 <div class="mb-3">
                     <label for="productPrice" class="form-label">Цена</label>
                     <InputText id="productPrice" class="form-control"
-                               @bind-Value="formattedPrice"
-                               @bind-Value:event="oninput" />
+                               @bind-Value="formattedPrice" />
                 </div>
 
                 <div class="mb-3">
@@ -112,10 +111,11 @@ else
         get => product?.Price.ToString("0.00", CultureInfo.InvariantCulture) ?? string.Empty;
         set
         {
-            if (decimal.TryParse(value, NumberStyles.Any, CultureInfo.InvariantCulture, out var result) && product != null)
+            if (decimal.TryParse(value, NumberStyles.Any, CultureInfo.CurrentCulture, out var result) && product != null)
             {
                 product.Price = result;
             }
+
         }
     }
 }

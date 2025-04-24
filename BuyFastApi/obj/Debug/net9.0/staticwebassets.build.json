@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "aJZ5d2QrKqBh4tWZm27OKtaMK37JCIXIAGjvVJZzw1c=",
+  "Hash": "XNtCFGvtyeXAowS6HgqRow/RBAkpTCnQGc9flfojJyc=",
   "Source": "BuyFastApi",
   "BasePath": "_content/BuyFastApi",
   "Mode": "Default",
@@ -36,6 +36,27 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\08460f57-735c-4634-aa4a-07c7382c5898.jpg"
+    },
+    {
+      "Identity": "C:\\Users\\Sh_jonizokov\\Desktop\\BuyFastWebApp\\BuyFastApi\\wwwroot\\2455a4e4-4658-429c-a8bb-056b54322dde.jpg",
+      "SourceId": "BuyFastApi",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Sh_jonizokov\\Desktop\\BuyFastWebApp\\BuyFastApi\\wwwroot\\",
+      "BasePath": "_content/BuyFastApi",
+      "RelativePath": "2455a4e4-4658-429c-a8bb-056b54322dde#[.{fingerprint}]?.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "ffngs2ltix",
+      "Integrity": "ZbEh5h/B49iqbSyAqY7Oq3+noAEES8L9rNaJzihNhTA=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\2455a4e4-4658-429c-a8bb-056b54322dde.jpg"
     },
     {
       "Identity": "C:\\Users\\Sh_jonizokov\\Desktop\\BuyFastWebApp\\BuyFastApi\\wwwroot\\5516a4d3-d661-4459-b4c5-31fc0ceb1ff6.png",
@@ -139,6 +160,88 @@
         {
           "Name": "integrity",
           "Value": "sha256-pgxkdp5cZVSYZMV3VkYW5TwBFNXLY5WPrnMHrVGkL6Y="
+        }
+      ]
+    },
+    {
+      "Route": "2455a4e4-4658-429c-a8bb-056b54322dde.ffngs2ltix.jpg",
+      "AssetFile": "C:\\Users\\Sh_jonizokov\\Desktop\\BuyFastWebApp\\BuyFastApi\\wwwroot\\2455a4e4-4658-429c-a8bb-056b54322dde.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "15909"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"ZbEh5h/B49iqbSyAqY7Oq3+noAEES8L9rNaJzihNhTA=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 21 Apr 2025 12:55:57 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "ffngs2ltix"
+        },
+        {
+          "Name": "label",
+          "Value": "2455a4e4-4658-429c-a8bb-056b54322dde.jpg"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-ZbEh5h/B49iqbSyAqY7Oq3+noAEES8L9rNaJzihNhTA="
+        }
+      ]
+    },
+    {
+      "Route": "2455a4e4-4658-429c-a8bb-056b54322dde.jpg",
+      "AssetFile": "C:\\Users\\Sh_jonizokov\\Desktop\\BuyFastWebApp\\BuyFastApi\\wwwroot\\2455a4e4-4658-429c-a8bb-056b54322dde.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "15909"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"ZbEh5h/B49iqbSyAqY7Oq3+noAEES8L9rNaJzihNhTA=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 21 Apr 2025 12:55:57 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-ZbEh5h/B49iqbSyAqY7Oq3+noAEES8L9rNaJzihNhTA="
         }
       ]
     },

@@ -1,7 +1,7 @@
 {
   "mainAssemblyName": "BuyFastAdmin",
   "resources": {
-    "hash": "sha256-lIOqsUKQvbLEd1CmqCkNW4GY3ffpzLpJAjQXgUJy3hI=",
+    "hash": "sha256-6eXs2VialnVqfw5HvibkoxwsdeFTOZo9K49d1A7M0BY=",
     "fingerprinting": {
       "BCrypt.Net-Next.atqw2jgj6x.wasm": "BCrypt.Net-Next.wasm",
       "BlazorDownloadFile.ct05c4bfyq.wasm": "BlazorDownloadFile.wasm",
@@ -208,10 +208,10 @@
       "icudt_CJK.tjcz0u77k5.dat": "icudt_CJK.dat",
       "icudt_EFIGS.tptq2av103.dat": "icudt_EFIGS.dat",
       "icudt_no_CJK.lfu7j35m59.dat": "icudt_no_CJK.dat",
-      "BuyFastDTO.320c18l1du.wasm": "BuyFastDTO.wasm",
-      "BuyFastDTO.okanb32o30.pdb": "BuyFastDTO.pdb",
-      "BuyFastAdmin.wkp3use4tb.wasm": "BuyFastAdmin.wasm",
-      "BuyFastAdmin.jhfpfagsv7.pdb": "BuyFastAdmin.pdb"
+      "BuyFastDTO.1sooldd2r3.wasm": "BuyFastDTO.wasm",
+      "BuyFastDTO.0kshqe210h.pdb": "BuyFastDTO.pdb",
+      "BuyFastAdmin.qsgrpy6zm2.wasm": "BuyFastAdmin.wasm",
+      "BuyFastAdmin.0wb4jpolg0.pdb": "BuyFastAdmin.pdb"
     },
     "jsModuleNative": {
       "dotnet.native.8bti36lthm.js": "sha256-HFADmT26AarHu4tMjFaTPxINmQjBJGtdPN+CKjtNMFE="
@@ -428,12 +428,12 @@
       "WindowsBase.tuf34ieu7y.wasm": "sha256-Bd+l972cOS1eVeLzrQNlgD6LPWV1QXBSzJhv8Tx1WGI=",
       "mscorlib.5q5u0swn6q.wasm": "sha256-g9cI1sECkF7bxMqOSB+W0a4utdDsqTrqZzyiAEeA65g=",
       "netstandard.w8gk1pigg1.wasm": "sha256-QFR5QNPfvyZTexW3IA/AFx6ZmIF/TecvOUsSK4gM4po=",
-      "BuyFastDTO.320c18l1du.wasm": "sha256-tSMpOJZgjFT9rpGRAJ2i7BuHshvqQteNZ3xoKrooyTg=",
-      "BuyFastAdmin.wkp3use4tb.wasm": "sha256-wK09HAirovW3L1yDW7K+DocBFyWhBSAAL1nW9RRw54I="
+      "BuyFastDTO.1sooldd2r3.wasm": "sha256-cWztDeKGOu4X/gHtgcjw9IbrlK6EVlr6ISP8h1suyrE=",
+      "BuyFastAdmin.qsgrpy6zm2.wasm": "sha256-NtEWchFpxx6n5MEL3dphtg3MvhVmcpfMYx/HOGlbo7Y="
     },
     "pdb": {
-      "BuyFastDTO.okanb32o30.pdb": "sha256-SIwRpIy+HRFH5U78Q7xvPu5g6k6u5LQJfNzS8JwdDq0=",
-      "BuyFastAdmin.jhfpfagsv7.pdb": "sha256-WQ4otSStxbTXK+gCsmCyi+uGRpcegUUrF3rKr6qoOxQ="
+      "BuyFastDTO.0kshqe210h.pdb": "sha256-MKOTku0DKz2zhqeBmRJWrRfAmwSVPhFyE9I1elKPZaY=",
+      "BuyFastAdmin.0wb4jpolg0.pdb": "sha256-0DPHk71ZXI3cRUz8sAPC8eeurRlhwsSwvoRQ4eihib8="
     }
   },
   "cacheBootResources": true,

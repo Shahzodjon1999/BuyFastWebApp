@@ -12,4 +12,11 @@ public class CategoriesController : BaseController<CategoryRequest,CategoryRespo
 {
     public CategoriesController(ILogger<ControllerBase> logger, IGenericService<CategoryRequest, CategoryResponse,Category> service)
         : base(logger, service) { }
+
+
+    [AllowAnonymous]
+    public override ActionResult<IEnumerable<Category>> GetAll()
+    {
+        return base.GetAll();
+    }
 }

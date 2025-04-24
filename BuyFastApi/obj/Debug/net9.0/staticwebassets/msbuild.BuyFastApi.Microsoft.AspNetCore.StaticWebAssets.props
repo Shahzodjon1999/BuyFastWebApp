@@ -18,6 +18,24 @@
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\08460f57-735c-4634-aa4a-07c7382c5898.jpg'))</OriginalItemSpec>
     </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\2455a4e4-4658-429c-a8bb-056b54322dde.jpg'))">
+      <SourceType>Package</SourceType>
+      <SourceId>BuyFastApi</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/BuyFastApi</BasePath>
+      <RelativePath>2455a4e4-4658-429c-a8bb-056b54322dde.jpg</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <Fingerprint>ffngs2ltix</Fingerprint>
+      <Integrity>ZbEh5h/B49iqbSyAqY7Oq3+noAEES8L9rNaJzihNhTA=</Integrity>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\2455a4e4-4658-429c-a8bb-056b54322dde.jpg'))</OriginalItemSpec>
+    </StaticWebAsset>
     <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\5516a4d3-d661-4459-b4c5-31fc0ceb1ff6.png'))">
       <SourceType>Package</SourceType>
       <SourceId>BuyFastApi</SourceId>

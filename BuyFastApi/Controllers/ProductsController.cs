@@ -72,7 +72,7 @@ public class ProductsController : BaseController<ProductRequest,ProductResponse,
         }
     }
 
-
+    [AllowAnonymous]
     [HttpGet]
     public override ActionResult<IEnumerable<Product>> GetAll()
     {

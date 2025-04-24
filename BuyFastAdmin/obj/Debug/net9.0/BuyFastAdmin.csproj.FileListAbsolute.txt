@@ -1134,10 +1134,6 @@ C:\Users\Sh_jonizokov\Desktop\BuyFastWebApp\BuyFastAdmin\bin\Debug\net9.0\wwwroo
 C:\Users\Sh_jonizokov\Desktop\BuyFastWebApp\BuyFastAdmin\bin\Debug\net9.0\wwwroot\_framework\blazor.webassembly.js
 C:\Users\Sh_jonizokov\Desktop\BuyFastWebApp\BuyFastAdmin\bin\Debug\net9.0\wwwroot\_framework\BlazorDownloadFile.ct05c4bfyq.wasm
 C:\Users\Sh_jonizokov\Desktop\BuyFastWebApp\BuyFastAdmin\bin\Debug\net9.0\wwwroot\_framework\Blazored.SessionStorage.34xr2ein7y.wasm
-C:\Users\Sh_jonizokov\Desktop\BuyFastWebApp\BuyFastAdmin\bin\Debug\net9.0\wwwroot\_framework\BuyFastAdmin.jhfpfagsv7.pdb
-C:\Users\Sh_jonizokov\Desktop\BuyFastWebApp\BuyFastAdmin\bin\Debug\net9.0\wwwroot\_framework\BuyFastAdmin.wkp3use4tb.wasm
-C:\Users\Sh_jonizokov\Desktop\BuyFastWebApp\BuyFastAdmin\bin\Debug\net9.0\wwwroot\_framework\BuyFastDTO.okanb32o30.pdb
-C:\Users\Sh_jonizokov\Desktop\BuyFastWebApp\BuyFastAdmin\bin\Debug\net9.0\wwwroot\_framework\BuyFastDTO.320c18l1du.wasm
 C:\Users\Sh_jonizokov\Desktop\BuyFastWebApp\BuyFastAdmin\bin\Debug\net9.0\wwwroot\_framework\dotnet.js
 C:\Users\Sh_jonizokov\Desktop\BuyFastWebApp\BuyFastAdmin\bin\Debug\net9.0\wwwroot\_framework\dotnet.js.map
 C:\Users\Sh_jonizokov\Desktop\BuyFastWebApp\BuyFastAdmin\bin\Debug\net9.0\wwwroot\_framework\dotnet.native.8bti36lthm.js
@@ -1360,7 +1356,6 @@ C:\Users\Sh_jonizokov\Desktop\BuyFastWebApp\BuyFastAdmin\bin\Debug\net9.0\wwwroo
 C:\Users\Sh_jonizokov\Desktop\BuyFastWebApp\BuyFastAdmin\bin\Debug\net9.0\wwwroot\_framework\System.Collections.Specialized.7r96r3kwk1.wasm.gz
 C:\Users\Sh_jonizokov\Desktop\BuyFastWebApp\BuyFastAdmin\bin\Debug\net9.0\wwwroot\_framework\System.Collections.cgl25682z4.wasm.gz
 C:\Users\Sh_jonizokov\Desktop\BuyFastWebApp\BuyFastAdmin\bin\Debug\net9.0\wwwroot\_framework\Microsoft.Extensions.Localization.Abstractions.o4jp2hcm79.wasm.gz
-C:\Users\Sh_jonizokov\Desktop\BuyFastWebApp\BuyFastAdmin\bin\Debug\net9.0\wwwroot\_framework\BuyFastDTO.okanb32o30.pdb.gz
 C:\Users\Sh_jonizokov\Desktop\BuyFastWebApp\BuyFastAdmin\bin\Debug\net9.0\wwwroot\_framework\System.Web.HttpUtility.kfn8vo7u5k.wasm.gz
 C:\Users\Sh_jonizokov\Desktop\BuyFastWebApp\BuyFastAdmin\bin\Debug\net9.0\wwwroot\_framework\netstandard.w8gk1pigg1.wasm.gz
 C:\Users\Sh_jonizokov\Desktop\BuyFastWebApp\BuyFastAdmin\bin\Debug\net9.0\wwwroot\_framework\System.Security.vw08eg5pfj.wasm.gz
@@ -1390,9 +1385,7 @@ C:\Users\Sh_jonizokov\Desktop\BuyFastWebApp\BuyFastAdmin\bin\Debug\net9.0\wwwroo
 C:\Users\Sh_jonizokov\Desktop\BuyFastWebApp\BuyFastAdmin\bin\Debug\net9.0\wwwroot\_framework\Microsoft.JSInterop.WebAssembly.vzj7d1zf5j.wasm.gz
 C:\Users\Sh_jonizokov\Desktop\BuyFastWebApp\BuyFastAdmin\bin\Debug\net9.0\wwwroot\_framework\Microsoft.Extensions.Logging.Abstractions.r95vt1inlr.wasm.gz
 C:\Users\Sh_jonizokov\Desktop\BuyFastWebApp\BuyFastAdmin\bin\Debug\net9.0\wwwroot\_framework\System.Private.Xml.zqcpjfk006.wasm.gz
-C:\Users\Sh_jonizokov\Desktop\BuyFastWebApp\BuyFastAdmin\bin\Debug\net9.0\wwwroot\_framework\BuyFastAdmin.jhfpfagsv7.pdb.gz
 C:\Users\Sh_jonizokov\Desktop\BuyFastWebApp\BuyFastAdmin\bin\Debug\net9.0\wwwroot\_framework\System.Security.Cryptography.X509Certificates.qdmguy0gfg.wasm.gz
-C:\Users\Sh_jonizokov\Desktop\BuyFastWebApp\BuyFastAdmin\bin\Debug\net9.0\wwwroot\_framework\BuyFastDTO.320c18l1du.wasm.gz
 C:\Users\Sh_jonizokov\Desktop\BuyFastWebApp\BuyFastAdmin\bin\Debug\net9.0\wwwroot\_framework\System.IO.FileSystem.AccessControl.knoyd66m4v.wasm.gz
 C:\Users\Sh_jonizokov\Desktop\BuyFastWebApp\BuyFastAdmin\bin\Debug\net9.0\wwwroot\_framework\Microsoft.Extensions.DependencyInjection.w6rb25gv28.wasm.gz
 C:\Users\Sh_jonizokov\Desktop\BuyFastWebApp\BuyFastAdmin\bin\Debug\net9.0\wwwroot\_framework\System.Threading.Overlapped.a8c6rgvw7l.wasm.gz
@@ -1470,7 +1463,6 @@ C:\Users\Sh_jonizokov\Desktop\BuyFastWebApp\BuyFastAdmin\bin\Debug\net9.0\wwwroo
 C:\Users\Sh_jonizokov\Desktop\BuyFastWebApp\BuyFastAdmin\bin\Debug\net9.0\wwwroot\_framework\System.Xml.XPath.XDocument.yeo34d112s.wasm.gz
 C:\Users\Sh_jonizokov\Desktop\BuyFastWebApp\BuyFastAdmin\bin\Debug\net9.0\wwwroot\_framework\System.Reflection.Primitives.un27ocukhl.wasm.gz
 C:\Users\Sh_jonizokov\Desktop\BuyFastWebApp\BuyFastAdmin\bin\Debug\net9.0\wwwroot\_framework\System.Diagnostics.Contracts.w6z74jygrt.wasm.gz
-C:\Users\Sh_jonizokov\Desktop\BuyFastWebApp\BuyFastAdmin\bin\Debug\net9.0\wwwroot\_framework\BuyFastAdmin.wkp3use4tb.wasm.gz
 C:\Users\Sh_jonizokov\Desktop\BuyFastWebApp\BuyFastAdmin\bin\Debug\net9.0\wwwroot\_framework\System.Xml.Serialization.4inb2qu00n.wasm.gz
 C:\Users\Sh_jonizokov\Desktop\BuyFastWebApp\BuyFastAdmin\bin\Debug\net9.0\wwwroot\_framework\System.Runtime.CompilerServices.Unsafe.mx06pw429a.wasm.gz
 C:\Users\Sh_jonizokov\Desktop\BuyFastWebApp\BuyFastAdmin\bin\Debug\net9.0\wwwroot\_framework\System.IO.Compression.ZipFile.svj8ec60o4.wasm.gz
@@ -2241,11 +2233,6 @@ C:\Users\Sh_jonizokov\Desktop\BuyFastWebApp\BuyFastAdmin\obj\Debug\net9.0\compre
 C:\Users\Sh_jonizokov\Desktop\BuyFastWebApp\BuyFastAdmin\obj\Debug\net9.0\compressed\vge5vryokb-tjcz0u77k5.gz
 C:\Users\Sh_jonizokov\Desktop\BuyFastWebApp\BuyFastAdmin\obj\Debug\net9.0\compressed\3bal6ky8x3-tptq2av103.gz
 C:\Users\Sh_jonizokov\Desktop\BuyFastWebApp\BuyFastAdmin\obj\Debug\net9.0\compressed\4y0tevi5p1-lfu7j35m59.gz
-C:\Users\Sh_jonizokov\Desktop\BuyFastWebApp\BuyFastAdmin\obj\Debug\net9.0\compressed\8be06q2o2l-320c18l1du.gz
-C:\Users\Sh_jonizokov\Desktop\BuyFastWebApp\BuyFastAdmin\obj\Debug\net9.0\compressed\2xaw9l5eax-okanb32o30.gz
-C:\Users\Sh_jonizokov\Desktop\BuyFastWebApp\BuyFastAdmin\obj\Debug\net9.0\compressed\merba1fpto-wkp3use4tb.gz
-C:\Users\Sh_jonizokov\Desktop\BuyFastWebApp\BuyFastAdmin\obj\Debug\net9.0\compressed\7ze2gq6fjj-jhfpfagsv7.gz
-C:\Users\Sh_jonizokov\Desktop\BuyFastWebApp\BuyFastAdmin\obj\Debug\net9.0\compressed\eabhmr5pkm-4k60z3v2rl.gz
 C:\Users\Sh_jonizokov\Desktop\BuyFastWebApp\BuyFastAdmin\obj\Debug\net9.0\staticwebassets.build.json
 C:\Users\Sh_jonizokov\Desktop\BuyFastWebApp\BuyFastAdmin\obj\Debug\net9.0\staticwebassets.development.json
 C:\Users\Sh_jonizokov\Desktop\BuyFastWebApp\BuyFastAdmin\obj\Debug\net9.0\staticwebassets.build.endpoints.json
@@ -2261,3 +2248,16 @@ C:\Users\Sh_jonizokov\Desktop\BuyFastWebApp\BuyFastAdmin\obj\Debug\net9.0\BuyFas
 C:\Users\Sh_jonizokov\Desktop\BuyFastWebApp\BuyFastAdmin\obj\Debug\net9.0\refint\BuyFastAdmin.dll
 C:\Users\Sh_jonizokov\Desktop\BuyFastWebApp\BuyFastAdmin\obj\Debug\net9.0\BuyFastAdmin.pdb
 C:\Users\Sh_jonizokov\Desktop\BuyFastWebApp\BuyFastAdmin\obj\Debug\net9.0\ref\BuyFastAdmin.dll
+C:\Users\Sh_jonizokov\Desktop\BuyFastWebApp\BuyFastAdmin\bin\Debug\net9.0\wwwroot\_framework\BuyFastAdmin.0wb4jpolg0.pdb
+C:\Users\Sh_jonizokov\Desktop\BuyFastWebApp\BuyFastAdmin\bin\Debug\net9.0\wwwroot\_framework\BuyFastAdmin.qsgrpy6zm2.wasm
+C:\Users\Sh_jonizokov\Desktop\BuyFastWebApp\BuyFastAdmin\bin\Debug\net9.0\wwwroot\_framework\BuyFastDTO.0kshqe210h.pdb
+C:\Users\Sh_jonizokov\Desktop\BuyFastWebApp\BuyFastAdmin\bin\Debug\net9.0\wwwroot\_framework\BuyFastDTO.1sooldd2r3.wasm
+C:\Users\Sh_jonizokov\Desktop\BuyFastWebApp\BuyFastAdmin\bin\Debug\net9.0\wwwroot\_framework\BuyFastDTO.0kshqe210h.pdb.gz
+C:\Users\Sh_jonizokov\Desktop\BuyFastWebApp\BuyFastAdmin\bin\Debug\net9.0\wwwroot\_framework\BuyFastAdmin.0wb4jpolg0.pdb.gz
+C:\Users\Sh_jonizokov\Desktop\BuyFastWebApp\BuyFastAdmin\bin\Debug\net9.0\wwwroot\_framework\BuyFastDTO.1sooldd2r3.wasm.gz
+C:\Users\Sh_jonizokov\Desktop\BuyFastWebApp\BuyFastAdmin\bin\Debug\net9.0\wwwroot\_framework\BuyFastAdmin.qsgrpy6zm2.wasm.gz
+C:\Users\Sh_jonizokov\Desktop\BuyFastWebApp\BuyFastAdmin\obj\Debug\net9.0\compressed\8be06q2o2l-1sooldd2r3.gz
+C:\Users\Sh_jonizokov\Desktop\BuyFastWebApp\BuyFastAdmin\obj\Debug\net9.0\compressed\2xaw9l5eax-0kshqe210h.gz
+C:\Users\Sh_jonizokov\Desktop\BuyFastWebApp\BuyFastAdmin\obj\Debug\net9.0\compressed\merba1fpto-qsgrpy6zm2.gz
+C:\Users\Sh_jonizokov\Desktop\BuyFastWebApp\BuyFastAdmin\obj\Debug\net9.0\compressed\7ze2gq6fjj-0wb4jpolg0.gz
+C:\Users\Sh_jonizokov\Desktop\BuyFastWebApp\BuyFastAdmin\obj\Debug\net9.0\compressed\eabhmr5pkm-6pf8430b4c.gz
