@@ -22,6 +22,7 @@ C:\Users\Sh_jonizokov\Desktop\BuyFastWebApp\BuyFastUI\obj\Debug\net9.0\BuyFastUI
 C:\Users\Sh_jonizokov\Desktop\BuyFastWebApp\BuyFastUI\obj\Debug\net9.0\scopedcss\Views\Shared\_Layout.cshtml.rz.scp.css
 C:\Users\Sh_jonizokov\Desktop\BuyFastWebApp\BuyFastUI\obj\Debug\net9.0\scopedcss\bundle\BuyFastUI.styles.css
 C:\Users\Sh_jonizokov\Desktop\BuyFastWebApp\BuyFastUI\obj\Debug\net9.0\scopedcss\projectbundle\BuyFastUI.bundle.scp.css
+C:\Users\Sh_jonizokov\Desktop\BuyFastWebApp\BuyFastUI\obj\Debug\net9.0\compressed\u0s828yg6o-tuj3dl5hyw.gz
 C:\Users\Sh_jonizokov\Desktop\BuyFastWebApp\BuyFastUI\obj\Debug\net9.0\compressed\a57h49c9up-61n19gt1b8.gz
 C:\Users\Sh_jonizokov\Desktop\BuyFastWebApp\BuyFastUI\obj\Debug\net9.0\compressed\giqvazmyfm-xtxxf3hu2r.gz
 C:\Users\Sh_jonizokov\Desktop\BuyFastWebApp\BuyFastUI\obj\Debug\net9.0\compressed\9xpqy1a1yr-t1cqhe9u97.gz
@@ -101,4 +102,3 @@ C:\Users\Sh_jonizokov\Desktop\BuyFastWebApp\BuyFastUI\obj\Debug\net9.0\refint\Bu
 C:\Users\Sh_jonizokov\Desktop\BuyFastWebApp\BuyFastUI\obj\Debug\net9.0\BuyFastUI.pdb
 C:\Users\Sh_jonizokov\Desktop\BuyFastWebApp\BuyFastUI\obj\Debug\net9.0\BuyFastUI.genruntimeconfig.cache
 C:\Users\Sh_jonizokov\Desktop\BuyFastWebApp\BuyFastUI\obj\Debug\net9.0\ref\BuyFastUI.dll
-C:\Users\Sh_jonizokov\Desktop\BuyFastWebApp\BuyFastUI\obj\Debug\net9.0\compressed\u0s828yg6o-x5zatuzvxj.gz

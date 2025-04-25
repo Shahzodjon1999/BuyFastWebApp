@@ -1,15 +1,15 @@
 var builder = WebApplication.CreateBuilder(args);
 
-// Add services to the container.
-builder.Services.AddControllersWithViews();
-
 builder.Services.AddHttpClient("ApiClient", client =>
 {
-    client.BaseAddress = new Uri("http://localhost:5222/");
+    client.BaseAddress = new Uri(builder.Configuration["ApiSettings:BaseUrl"]);
 });
 
-builder.Services.AddHttpContextAccessor();
+builder.Services.AddSingleton<IHttpContextAccessor, HttpContextAccessor>();
 builder.Services.AddSession();
+
+// Add services to the container.
+builder.Services.AddControllersWithViews();
 
 var app = builder.Build();
 
@@ -33,6 +33,5 @@ app.MapControllerRoute(
         name: "default",
         pattern: "{controller=Product}/{action=Index}/{id?}")
     .WithStaticAssets();
-
 
 app.Run();

@@ -13,6 +13,14 @@
       "PackagePath": "staticwebassets\\favicon.ico"
     },
     {
+      "Id": "C:\\Users\\Sh_jonizokov\\Desktop\\BuyFastWebApp\\BuyFastUI\\wwwroot\\images\\facebook.png",
+      "PackagePath": "staticwebassets\\images\\facebook.png"
+    },
+    {
+      "Id": "C:\\Users\\Sh_jonizokov\\Desktop\\BuyFastWebApp\\BuyFastUI\\wwwroot\\images\\instagram.png",
+      "PackagePath": "staticwebassets\\images\\instagram.png"
+    },
+    {
       "Id": "C:\\Users\\Sh_jonizokov\\Desktop\\BuyFastWebApp\\BuyFastUI\\wwwroot\\js\\site.js",
       "PackagePath": "staticwebassets\\js\\site.js"
     },

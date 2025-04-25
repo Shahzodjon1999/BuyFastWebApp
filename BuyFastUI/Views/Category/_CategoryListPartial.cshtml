@@ -1,0 +1,12 @@
+﻿@using BuyFastDTO.ResponseModel
+@model List<CategoryResponse>
+
+<div class="card p-3">
+    <h5>Категории</h5>
+    <ul class="list-group">
+        @foreach (var category in Model)
+        {
+            <li class="list-group-item">@category.Name</li>
+        }
+    </ul>
+</div>

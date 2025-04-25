@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "RqnTWYT/l4YgkmQBZ4mG7Nh/uk14GIbj+niXLm55gf0=",
+  "Hash": "lG0WT2GCJ5k2Yu0L7uW0DXCH8CGpjgYib+Kvycp6IeA=",
   "Source": "BuyFastUI",
   "BasePath": "_content/BuyFastUI",
   "Mode": "Default",
@@ -1172,12 +1172,12 @@
       "OriginalItemSpec": "C:\\Users\\Sh_jonizokov\\Desktop\\BuyFastWebApp\\BuyFastUI\\wwwroot\\lib\\jquery-validation-unobtrusive\\dist\\jquery.validate.unobtrusive.js"
     },
     {
-      "Identity": "C:\\Users\\Sh_jonizokov\\Desktop\\BuyFastWebApp\\BuyFastUI\\obj\\Debug\\net9.0\\compressed\\u0s828yg6o-x5zatuzvxj.gz",
+      "Identity": "C:\\Users\\Sh_jonizokov\\Desktop\\BuyFastWebApp\\BuyFastUI\\obj\\Debug\\net9.0\\compressed\\u0s828yg6o-tuj3dl5hyw.gz",
       "SourceId": "BuyFastUI",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\Sh_jonizokov\\Desktop\\BuyFastWebApp\\BuyFastUI\\obj\\Debug\\net9.0\\compressed\\",
       "BasePath": "_content/BuyFastUI",
-      "RelativePath": "css/site#[.{fingerprint=x5zatuzvxj}]?.css.gz",
+      "RelativePath": "css/site#[.{fingerprint=tuj3dl5hyw}]?.css.gz",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Alternative",
@@ -1186,8 +1186,8 @@
       "RelatedAsset": "C:\\Users\\Sh_jonizokov\\Desktop\\BuyFastWebApp\\BuyFastUI\\wwwroot\\css\\site.css",
       "AssetTraitName": "Content-Encoding",
       "AssetTraitValue": "gzip",
-      "Fingerprint": "mjtvpcffhq",
-      "Integrity": "UsAHvWTjcXMybwypNhiLel49S1OSWpp0tgU27qLgeKQ=",
+      "Fingerprint": "rm9gh2rob7",
+      "Integrity": "wz0YHa5wkPYCfIDw0fVb2iuzQTD1f1DqG/VPlEgtLWo=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "C:\\Users\\Sh_jonizokov\\Desktop\\BuyFastWebApp\\BuyFastUI\\wwwroot\\css\\site.css"
@@ -1417,8 +1417,8 @@
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
-      "Fingerprint": "x5zatuzvxj",
-      "Integrity": "hTWkPIVOAzp0uREyi216Ej0Oc+gxdMQKMDdLYpIvmYE=",
+      "Fingerprint": "tuj3dl5hyw",
+      "Integrity": "u0dBBtKZeCDNACVtDKyr5gRpvfdjUZth0Q8+HtyE5Rs=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\css\\site.css"
@@ -1443,6 +1443,48 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\favicon.ico"
+    },
+    {
+      "Identity": "C:\\Users\\Sh_jonizokov\\Desktop\\BuyFastWebApp\\BuyFastUI\\wwwroot\\images\\facebook.png",
+      "SourceId": "BuyFastUI",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Sh_jonizokov\\Desktop\\BuyFastWebApp\\BuyFastUI\\wwwroot\\",
+      "BasePath": "_content/BuyFastUI",
+      "RelativePath": "images/facebook#[.{fingerprint}]?.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "eq5ra38da3",
+      "Integrity": "xkubF54m+9kAFoZUCOunZFjWT2p0SO+dqlIlHFiRA04=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\facebook.png"
+    },
+    {
+      "Identity": "C:\\Users\\Sh_jonizokov\\Desktop\\BuyFastWebApp\\BuyFastUI\\wwwroot\\images\\instagram.png",
+      "SourceId": "BuyFastUI",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Sh_jonizokov\\Desktop\\BuyFastWebApp\\BuyFastUI\\wwwroot\\",
+      "BasePath": "_content/BuyFastUI",
+      "RelativePath": "images/instagram#[.{fingerprint}]?.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "na7uc73rk7",
+      "Integrity": "kYdOrnApJxaN1AXsVk9vgto1vAieNqfjed4c+QsOLOI=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\instagram.png"
     },
     {
       "Identity": "C:\\Users\\Sh_jonizokov\\Desktop\\BuyFastWebApp\\BuyFastUI\\wwwroot\\js\\site.js",
@@ -2752,7 +2794,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 24 Apr 2025 09:12:47 GMT"
+          "Value": "Fri, 25 Apr 2025 11:11:39 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -2813,7 +2855,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 24 Apr 2025 09:12:47 GMT"
+          "Value": "Fri, 25 Apr 2025 11:11:39 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -2858,7 +2900,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 24 Apr 2025 09:12:47 GMT"
+          "Value": "Fri, 25 Apr 2025 11:11:39 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -2913,7 +2955,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 24 Apr 2025 09:12:47 GMT"
+          "Value": "Fri, 25 Apr 2025 11:11:39 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -2974,7 +3016,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 24 Apr 2025 09:12:47 GMT"
+          "Value": "Fri, 25 Apr 2025 11:11:39 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -3019,7 +3061,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 24 Apr 2025 09:12:47 GMT"
+          "Value": "Fri, 25 Apr 2025 11:11:39 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -3074,7 +3116,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 24 Apr 2025 09:12:47 GMT"
+          "Value": "Fri, 25 Apr 2025 11:11:39 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -3127,7 +3169,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 24 Apr 2025 09:12:47 GMT"
+          "Value": "Fri, 25 Apr 2025 11:11:39 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -3164,7 +3206,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 24 Apr 2025 09:12:47 GMT"
+          "Value": "Fri, 25 Apr 2025 11:11:39 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -3211,7 +3253,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 24 Apr 2025 09:12:47 GMT"
+          "Value": "Fri, 25 Apr 2025 11:11:39 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -3264,7 +3306,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 24 Apr 2025 09:12:47 GMT"
+          "Value": "Fri, 25 Apr 2025 11:11:39 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -3301,7 +3343,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 24 Apr 2025 09:12:47 GMT"
+          "Value": "Fri, 25 Apr 2025 11:11:39 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -3325,12 +3367,12 @@
     },
     {
       "Route": "css/site.css",
-      "AssetFile": "C:\\Users\\Sh_jonizokov\\Desktop\\BuyFastWebApp\\BuyFastUI\\obj\\Debug\\net9.0\\compressed\\u0s828yg6o-x5zatuzvxj.gz",
+      "AssetFile": "C:\\Users\\Sh_jonizokov\\Desktop\\BuyFastWebApp\\BuyFastUI\\obj\\Debug\\net9.0\\compressed\\u0s828yg6o-tuj3dl5hyw.gz",
       "Selectors": [
         {
           "Name": "Content-Encoding",
           "Value": "gzip",
-          "Quality": "0.002380952381"
+          "Quality": "0.002242152466"
         }
       ],
       "ResponseHeaders": [
@@ -3340,15 +3382,15 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "419"
+          "Value": "445"
         },
         {
           "Name": "ETag",
-          "Value": "\"UsAHvWTjcXMybwypNhiLel49S1OSWpp0tgU27qLgeKQ=\""
+          "Value": "\"wz0YHa5wkPYCfIDw0fVb2iuzQTD1f1DqG/VPlEgtLWo=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 24 Apr 2025 10:03:56 GMT"
+          "Value": "Fri, 25 Apr 2025 10:57:45 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -3368,13 +3410,13 @@
         },
         {
           "Name": "ETag",
-          "Value": "W/\"hTWkPIVOAzp0uREyi216Ej0Oc+gxdMQKMDdLYpIvmYE=\""
+          "Value": "W/\"u0dBBtKZeCDNACVtDKyr5gRpvfdjUZth0Q8+HtyE5Rs=\""
         }
       ],
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-hTWkPIVOAzp0uREyi216Ej0Oc+gxdMQKMDdLYpIvmYE="
+          "Value": "sha256-u0dBBtKZeCDNACVtDKyr5gRpvfdjUZth0Q8+HtyE5Rs="
         }
       ]
     },
@@ -3389,7 +3431,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "932"
+          "Value": "1091"
         },
         {
           "Name": "Content-Type",
@@ -3397,11 +3439,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"hTWkPIVOAzp0uREyi216Ej0Oc+gxdMQKMDdLYpIvmYE=\""
+          "Value": "\"u0dBBtKZeCDNACVtDKyr5gRpvfdjUZth0Q8+HtyE5Rs=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 24 Apr 2025 10:03:56 GMT"
+          "Value": "Fri, 25 Apr 2025 10:57:45 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -3411,13 +3453,13 @@
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-hTWkPIVOAzp0uREyi216Ej0Oc+gxdMQKMDdLYpIvmYE="
+          "Value": "sha256-u0dBBtKZeCDNACVtDKyr5gRpvfdjUZth0Q8+HtyE5Rs="
         }
       ]
     },
     {
       "Route": "css/site.css.gz",
-      "AssetFile": "C:\\Users\\Sh_jonizokov\\Desktop\\BuyFastWebApp\\BuyFastUI\\obj\\Debug\\net9.0\\compressed\\u0s828yg6o-x5zatuzvxj.gz",
+      "AssetFile": "C:\\Users\\Sh_jonizokov\\Desktop\\BuyFastWebApp\\BuyFastUI\\obj\\Debug\\net9.0\\compressed\\u0s828yg6o-tuj3dl5hyw.gz",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -3426,7 +3468,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "419"
+          "Value": "445"
         },
         {
           "Name": "Content-Type",
@@ -3434,11 +3476,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"UsAHvWTjcXMybwypNhiLel49S1OSWpp0tgU27qLgeKQ=\""
+          "Value": "\"wz0YHa5wkPYCfIDw0fVb2iuzQTD1f1DqG/VPlEgtLWo=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 24 Apr 2025 10:03:56 GMT"
+          "Value": "Fri, 25 Apr 2025 10:57:45 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -3456,18 +3498,18 @@
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-UsAHvWTjcXMybwypNhiLel49S1OSWpp0tgU27qLgeKQ="
+          "Value": "sha256-wz0YHa5wkPYCfIDw0fVb2iuzQTD1f1DqG/VPlEgtLWo="
         }
       ]
     },
     {
-      "Route": "css/site.x5zatuzvxj.css",
-      "AssetFile": "C:\\Users\\Sh_jonizokov\\Desktop\\BuyFastWebApp\\BuyFastUI\\obj\\Debug\\net9.0\\compressed\\u0s828yg6o-x5zatuzvxj.gz",
+      "Route": "css/site.tuj3dl5hyw.css",
+      "AssetFile": "C:\\Users\\Sh_jonizokov\\Desktop\\BuyFastWebApp\\BuyFastUI\\obj\\Debug\\net9.0\\compressed\\u0s828yg6o-tuj3dl5hyw.gz",
       "Selectors": [
         {
           "Name": "Content-Encoding",
           "Value": "gzip",
-          "Quality": "0.002380952381"
+          "Quality": "0.002242152466"
         }
       ],
       "ResponseHeaders": [
@@ -3477,15 +3519,15 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "419"
+          "Value": "445"
         },
         {
           "Name": "ETag",
-          "Value": "\"UsAHvWTjcXMybwypNhiLel49S1OSWpp0tgU27qLgeKQ=\""
+          "Value": "\"wz0YHa5wkPYCfIDw0fVb2iuzQTD1f1DqG/VPlEgtLWo=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 24 Apr 2025 10:03:56 GMT"
+          "Value": "Fri, 25 Apr 2025 10:57:45 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -3505,13 +3547,13 @@
         },
         {
           "Name": "ETag",
-          "Value": "W/\"hTWkPIVOAzp0uREyi216Ej0Oc+gxdMQKMDdLYpIvmYE=\""
+          "Value": "W/\"u0dBBtKZeCDNACVtDKyr5gRpvfdjUZth0Q8+HtyE5Rs=\""
         }
       ],
       "EndpointProperties": [
         {
           "Name": "fingerprint",
-          "Value": "x5zatuzvxj"
+          "Value": "tuj3dl5hyw"
         },
         {
           "Name": "label",
@@ -3519,12 +3561,12 @@
         },
         {
           "Name": "integrity",
-          "Value": "sha256-hTWkPIVOAzp0uREyi216Ej0Oc+gxdMQKMDdLYpIvmYE="
+          "Value": "sha256-u0dBBtKZeCDNACVtDKyr5gRpvfdjUZth0Q8+HtyE5Rs="
         }
       ]
     },
     {
-      "Route": "css/site.x5zatuzvxj.css",
+      "Route": "css/site.tuj3dl5hyw.css",
       "AssetFile": "C:\\Users\\Sh_jonizokov\\Desktop\\BuyFastWebApp\\BuyFastUI\\wwwroot\\css\\site.css",
       "Selectors": [],
       "ResponseHeaders": [
@@ -3534,7 +3576,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "932"
+          "Value": "1091"
         },
         {
           "Name": "Content-Type",
@@ -3542,11 +3584,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"hTWkPIVOAzp0uREyi216Ej0Oc+gxdMQKMDdLYpIvmYE=\""
+          "Value": "\"u0dBBtKZeCDNACVtDKyr5gRpvfdjUZth0Q8+HtyE5Rs=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 24 Apr 2025 10:03:56 GMT"
+          "Value": "Fri, 25 Apr 2025 10:57:45 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -3556,7 +3598,7 @@
       "EndpointProperties": [
         {
           "Name": "fingerprint",
-          "Value": "x5zatuzvxj"
+          "Value": "tuj3dl5hyw"
         },
         {
           "Name": "label",
@@ -3564,13 +3606,13 @@
         },
         {
           "Name": "integrity",
-          "Value": "sha256-hTWkPIVOAzp0uREyi216Ej0Oc+gxdMQKMDdLYpIvmYE="
+          "Value": "sha256-u0dBBtKZeCDNACVtDKyr5gRpvfdjUZth0Q8+HtyE5Rs="
         }
       ]
     },
     {
-      "Route": "css/site.x5zatuzvxj.css.gz",
-      "AssetFile": "C:\\Users\\Sh_jonizokov\\Desktop\\BuyFastWebApp\\BuyFastUI\\obj\\Debug\\net9.0\\compressed\\u0s828yg6o-x5zatuzvxj.gz",
+      "Route": "css/site.tuj3dl5hyw.css.gz",
+      "AssetFile": "C:\\Users\\Sh_jonizokov\\Desktop\\BuyFastWebApp\\BuyFastUI\\obj\\Debug\\net9.0\\compressed\\u0s828yg6o-tuj3dl5hyw.gz",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -3579,7 +3621,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "419"
+          "Value": "445"
         },
         {
           "Name": "Content-Type",
@@ -3587,11 +3629,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"UsAHvWTjcXMybwypNhiLel49S1OSWpp0tgU27qLgeKQ=\""
+          "Value": "\"wz0YHa5wkPYCfIDw0fVb2iuzQTD1f1DqG/VPlEgtLWo=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 24 Apr 2025 10:03:56 GMT"
+          "Value": "Fri, 25 Apr 2025 10:57:45 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -3609,7 +3651,7 @@
       "EndpointProperties": [
         {
           "Name": "fingerprint",
-          "Value": "x5zatuzvxj"
+          "Value": "tuj3dl5hyw"
         },
         {
           "Name": "label",
@@ -3617,7 +3659,7 @@
         },
         {
           "Name": "integrity",
-          "Value": "sha256-UsAHvWTjcXMybwypNhiLel49S1OSWpp0tgU27qLgeKQ="
+          "Value": "sha256-wz0YHa5wkPYCfIDw0fVb2iuzQTD1f1DqG/VPlEgtLWo="
         }
       ]
     },
@@ -3916,6 +3958,170 @@
         {
           "Name": "integrity",
           "Value": "sha256-jcY0RXFOlcp4VNTCcYQtWVZZBlr+ZY+AOv6/0S5dnF8="
+        }
+      ]
+    },
+    {
+      "Route": "images/facebook.eq5ra38da3.png",
+      "AssetFile": "C:\\Users\\Sh_jonizokov\\Desktop\\BuyFastWebApp\\BuyFastUI\\wwwroot\\images\\facebook.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "974"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"xkubF54m+9kAFoZUCOunZFjWT2p0SO+dqlIlHFiRA04=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 25 Apr 2025 11:04:31 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "eq5ra38da3"
+        },
+        {
+          "Name": "label",
+          "Value": "images/facebook.png"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-xkubF54m+9kAFoZUCOunZFjWT2p0SO+dqlIlHFiRA04="
+        }
+      ]
+    },
+    {
+      "Route": "images/facebook.png",
+      "AssetFile": "C:\\Users\\Sh_jonizokov\\Desktop\\BuyFastWebApp\\BuyFastUI\\wwwroot\\images\\facebook.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "974"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"xkubF54m+9kAFoZUCOunZFjWT2p0SO+dqlIlHFiRA04=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 25 Apr 2025 11:04:31 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-xkubF54m+9kAFoZUCOunZFjWT2p0SO+dqlIlHFiRA04="
+        }
+      ]
+    },
+    {
+      "Route": "images/instagram.na7uc73rk7.png",
+      "AssetFile": "C:\\Users\\Sh_jonizokov\\Desktop\\BuyFastWebApp\\BuyFastUI\\wwwroot\\images\\instagram.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "211993"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"kYdOrnApJxaN1AXsVk9vgto1vAieNqfjed4c+QsOLOI=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 25 Apr 2025 11:02:36 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "na7uc73rk7"
+        },
+        {
+          "Name": "label",
+          "Value": "images/instagram.png"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-kYdOrnApJxaN1AXsVk9vgto1vAieNqfjed4c+QsOLOI="
+        }
+      ]
+    },
+    {
+      "Route": "images/instagram.png",
+      "AssetFile": "C:\\Users\\Sh_jonizokov\\Desktop\\BuyFastWebApp\\BuyFastUI\\wwwroot\\images\\instagram.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "211993"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"kYdOrnApJxaN1AXsVk9vgto1vAieNqfjed4c+QsOLOI=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 25 Apr 2025 11:02:36 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-kYdOrnApJxaN1AXsVk9vgto1vAieNqfjed4c+QsOLOI="
         }
       ]
     },

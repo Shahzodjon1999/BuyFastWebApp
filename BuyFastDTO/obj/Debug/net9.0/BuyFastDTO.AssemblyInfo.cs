@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("BuyFastDTO")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+f67c0422e6e59b5c830671ed37e19f167b0d31af")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+e648a13fe135abbac31c65ee5b82ae5adfeaf70c")]
 [assembly: System.Reflection.AssemblyProductAttribute("BuyFastDTO")]
 [assembly: System.Reflection.AssemblyTitleAttribute("BuyFastDTO")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

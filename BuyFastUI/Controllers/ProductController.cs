@@ -30,6 +30,32 @@ public class ProductController : Controller
         return View(response);
     }
 
+    public async Task<IActionResult> Details(Guid id)
+    {
+       
+        var product = await _httpClient.GetFromJsonAsync<ProductResponse>($"api/Products/Id?id={id}");
+        if (product == null)
+        {
+            return NotFound();
+        }
+
+        return View(product);
+    }
+
+    public async Task<IActionResult> AddToCart(Guid id)
+    {
+        var product = await _httpClient.GetFromJsonAsync<ProductResponse>($"api/Products/Id?id={id}");
+        if (product == null) return NotFound();
+
+        // ������ ������� � ������
+        // var cart = _httpClient.Session.Get<List<Guid>>("Cart") ?? new List<Guid>();
+        // cart.Add(product.Id);
+        // HttpContext.Session.Set("Cart", cart);
+
+        TempData["Success"] = $"{product.Name} added to cart!";
+        return RedirectToAction("Index");
+    }
+
     public IActionResult Privacy()
     {
         return View();

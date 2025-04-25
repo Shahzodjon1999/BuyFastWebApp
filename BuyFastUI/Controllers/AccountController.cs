@@ -1,13 +1,13 @@
 ﻿using BuyFastDTO.RequestModels;
+using BuyFastDTO.ResponseModel;
+using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
-using System.Net.Http;
 
 namespace BuyFastUI.Controllers
 {
     public class AccountController : Controller
     {
         private readonly IHttpClientFactory _httpClientFactory;
-
         public AccountController(IHttpClientFactory httpClientFactory)
         {
             _httpClientFactory = httpClientFactory;
@@ -16,15 +16,15 @@ namespace BuyFastUI.Controllers
         [HttpPost]
         public async Task<IActionResult> Login(LoginRequest model)
         {
-            var client = _httpClientFactory.CreateClient();
-            var response = await client.PostAsJsonAsync("https://your-api.com/api/auth/login", model);
+            var client = _httpClientFactory.CreateClient("ApiClient");
+            var response = await client.PostAsJsonAsync("/api/auth/login", model);
 
             if (response.IsSuccessStatusCode)
             {
-                var jwt = await response.Content.ReadAsStringAsync();
+                var content = await response.Content.ReadFromJsonAsync<AuthResponse>();
 
                 // Save JWT in cookie or session
-                HttpContext.Session.SetString("JWT", jwt);
+                HttpContext.Session.SetString("JWToken", content.Token);
 
                 return RedirectToAction("Index", "Product");
             }
@@ -37,6 +37,11 @@ namespace BuyFastUI.Controllers
         public ActionResult Login()
         {
             return View();
+        }
+
+        public async Task<IActionResult> Logout()
+        {
+            return RedirectToAction("Index", "Product");
         }
     }
 }

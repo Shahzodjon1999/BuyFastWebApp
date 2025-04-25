@@ -416,3 +416,12 @@ D:\BuyFastWebApp\BuyFastApi\obj\Debug\net9.0\BuyFastApi.genruntimeconfig.cache
 D:\BuyFastWebApp\BuyFastApi\obj\Debug\net9.0\ref\BuyFastApi.dll
 D:\BuyFastWebApp\BuyFastApi\bin\Debug\net9.0\BuyFastApi.staticwebassets.runtime.json
 C:\Users\Sh_jonizokov\Desktop\BuyFastWebApp\BuyFastApi\bin\Debug\net9.0\BuyFastApi.staticwebassets.runtime.json
+C:\Users\Sh_jonizokov\Desktop\BuyFastWebApp\BuyFastApi\bin\Debug\net9.0\Microsoft.Extensions.Caching.Abstractions.dll
+C:\Users\Sh_jonizokov\Desktop\BuyFastWebApp\BuyFastApi\bin\Debug\net9.0\Microsoft.Extensions.Caching.Memory.dll
+C:\Users\Sh_jonizokov\Desktop\BuyFastWebApp\BuyFastApi\bin\Debug\net9.0\Microsoft.Extensions.Configuration.Abstractions.dll
+C:\Users\Sh_jonizokov\Desktop\BuyFastWebApp\BuyFastApi\bin\Debug\net9.0\Microsoft.Extensions.DependencyInjection.dll
+C:\Users\Sh_jonizokov\Desktop\BuyFastWebApp\BuyFastApi\bin\Debug\net9.0\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+C:\Users\Sh_jonizokov\Desktop\BuyFastWebApp\BuyFastApi\bin\Debug\net9.0\Microsoft.Extensions.Logging.dll
+C:\Users\Sh_jonizokov\Desktop\BuyFastWebApp\BuyFastApi\bin\Debug\net9.0\Microsoft.Extensions.Logging.Abstractions.dll
+C:\Users\Sh_jonizokov\Desktop\BuyFastWebApp\BuyFastApi\bin\Debug\net9.0\Microsoft.Extensions.Options.dll
+C:\Users\Sh_jonizokov\Desktop\BuyFastWebApp\BuyFastApi\bin\Debug\net9.0\Microsoft.Extensions.Primitives.dll

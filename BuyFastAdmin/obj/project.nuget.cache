@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "Egl2TToMS08=",
+  "dgSpecHash": "nrGk71xTKYo=",
   "success": true,
   "projectFilePath": "C:\\Users\\Sh_jonizokov\\Desktop\\BuyFastWebApp\\BuyFastAdmin\\BuyFastAdmin.csproj",
   "expectedPackageFiles": [
@@ -34,10 +34,10 @@
     "C:\\Users\\Sh_jonizokov\\.nuget\\packages\\microsoft.extensions.primitives\\9.0.2\\microsoft.extensions.primitives.9.0.2.nupkg.sha512",
     "C:\\Users\\Sh_jonizokov\\.nuget\\packages\\microsoft.jsinterop\\9.0.2\\microsoft.jsinterop.9.0.2.nupkg.sha512",
     "C:\\Users\\Sh_jonizokov\\.nuget\\packages\\microsoft.jsinterop.webassembly\\9.0.2\\microsoft.jsinterop.webassembly.9.0.2.nupkg.sha512",
-    "C:\\Users\\Sh_jonizokov\\.nuget\\packages\\microsoft.net.illink.tasks\\9.0.2\\microsoft.net.illink.tasks.9.0.2.nupkg.sha512",
-    "C:\\Users\\Sh_jonizokov\\.nuget\\packages\\microsoft.net.sdk.webassembly.pack\\9.0.2\\microsoft.net.sdk.webassembly.pack.9.0.2.nupkg.sha512",
+    "C:\\Users\\Sh_jonizokov\\.nuget\\packages\\microsoft.net.illink.tasks\\9.0.4\\microsoft.net.illink.tasks.9.0.4.nupkg.sha512",
+    "C:\\Users\\Sh_jonizokov\\.nuget\\packages\\microsoft.net.sdk.webassembly.pack\\9.0.4\\microsoft.net.sdk.webassembly.pack.9.0.4.nupkg.sha512",
     "C:\\Users\\Sh_jonizokov\\.nuget\\packages\\mudblazor\\8.5.1\\mudblazor.8.5.1.nupkg.sha512",
-    "C:\\Users\\Sh_jonizokov\\.nuget\\packages\\microsoft.netcore.app.runtime.mono.browser-wasm\\9.0.2\\microsoft.netcore.app.runtime.mono.browser-wasm.9.0.2.nupkg.sha512"
+    "C:\\Users\\Sh_jonizokov\\.nuget\\packages\\microsoft.netcore.app.runtime.mono.browser-wasm\\9.0.4\\microsoft.netcore.app.runtime.mono.browser-wasm.9.0.4.nupkg.sha512"
   ],
   "logs": []
 }

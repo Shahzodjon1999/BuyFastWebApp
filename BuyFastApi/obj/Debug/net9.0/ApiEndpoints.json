@@ -280,7 +280,7 @@
     ]
   },
   {
-    "ContainingType": "BuyFastApi.Controllers.BaseController\u00603[[BuyFastDTO.RequestModels.CategoryRequest, BuyFastDTO, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[BuyFastDTO.ResponseModel.CategoryResponse, BuyFastDTO, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[BuyFastApi.Models.Category, BuyFastApi, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+    "ContainingType": "BuyFastApi.Controllers.CategoriesController",
     "Method": "GetAll",
     "RelativePath": "api/Categories",
     "HttpMethod": "GET",
