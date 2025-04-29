@@ -1,7 +1,12 @@
 {
   "Version": 1,
   "WorkspaceRootPath": "C:\\Users\\Sh_jonizokov\\Desktop\\BuyFastWebApp\\",
-  "Documents": [],
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{F9B6348E-66E5-429D-9FA8-FF56398F591B}|BuyFastUI\\BuyFastUI.csproj|c:\\users\\sh_jonizokov\\desktop\\buyfastwebapp\\buyfastui\\controllers\\productcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F9B6348E-66E5-429D-9FA8-FF56398F591B}|BuyFastUI\\BuyFastUI.csproj|solutionrelative:buyfastui\\controllers\\productcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
   "DocumentGroupContainers": [
     {
       "Orientation": 0,
@@ -9,7 +14,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": -1,
+          "SelectedChildIndex": 5,
           "Children": [
             {
               "$type": "Bookmark",
@@ -30,6 +35,19 @@
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{34e76e81-ee4a-11d0-ae2e-00a0c90fffc3}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "ProductController.cs",
+              "DocumentMoniker": "C:\\Users\\Sh_jonizokov\\Desktop\\BuyFastWebApp\\BuyFastUI\\Controllers\\ProductController.cs",
+              "RelativeDocumentMoniker": "BuyFastUI\\Controllers\\ProductController.cs",
+              "ToolTip": "C:\\Users\\Sh_jonizokov\\Desktop\\BuyFastWebApp\\BuyFastUI\\Controllers\\ProductController.cs",
+              "RelativeToolTip": "BuyFastUI\\Controllers\\ProductController.cs",
+              "ViewState": "AgIAADQAAAAAAAAAAAAiwE0AAAAEAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-29T09:42:47.124Z",
+              "EditorCaption": ""
             }
           ]
         }

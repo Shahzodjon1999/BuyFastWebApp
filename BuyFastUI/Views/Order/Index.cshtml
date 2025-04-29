@@ -1,0 +1,42 @@
+﻿@using BuyFastDTO
+@model List<OrderItemDto>
+@{
+    ViewBag.Title = "Your Cart";
+}
+
+<div class="container mt-4">
+    <h2>Your Cart</h2>
+
+    @if (Model.Any())
+    {
+        <table class="table table-bordered">
+            <thead>
+                <tr>
+                    <th>Product</th>
+                    <th>Unit Price</th>
+                    <th>Quantity</th>
+                    <th>Total</th>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (var item in Model)
+                {
+                    <tr>
+                        <td>@item.ProductName</td>
+                        <td>@item.UnitPrice.ToString("C")</td>
+                        <td>@item.Quantity</td>
+                        <td>@(item.Quantity * item.UnitPrice).ToString("C")</td>
+                    </tr>
+                }
+            </tbody>
+        </table>
+
+        <div class="text-end">
+            <a href="@Url.Action("Checkout", "Order")" class="btn btn-primary">Proceed to Checkout</a>
+        </div>
+    }
+    else
+    {
+        <div class="alert alert-info">Your cart is empty.</div>
+    }
+</div>

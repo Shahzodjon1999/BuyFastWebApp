@@ -10,6 +10,35 @@ namespace BuyFastApi.Controllers;
 [Route("api/[controller]")]
 public class CartItemsController : BaseController<CartItemDto, CardItemResponse,CartItem>
 {
-    public CartItemsController(ILogger<ControllerBase> logger, IGenericService<CartItemDto, CardItemResponse,CartItem> repository)
-        : base(logger, repository) { }
+    private readonly IGenericService<CartItemDto, CardItemResponse, CartItem> _service;
+    public CartItemsController(ILogger<ControllerBase> logger, IGenericService<CartItemDto, CardItemResponse,CartItem> service)
+        : base(logger, service) {_service = service; }
+    
+    [AllowAnonymous]
+    [HttpGet]
+    public override ActionResult<IEnumerable<CartItem>> GetAll()
+    {
+        OrderItemResponse itemResponse = null;
+        try
+        {
+            var product = _service.GetAll();
+            var baseUrl = $"{Request.Scheme}://{Request.Host}{Request.PathBase}";
+
+            var OrderItemResponse = product.Select(productOption => new CartItem
+            {
+                Id = productOption.Id,
+                Product = productOption.Product,
+                Quantity = productOption.Quantity,
+                CartId = productOption.CartId,
+                ProductId = productOption.ProductId,
+                Cart = productOption.Cart,
+            });
+
+            return Ok(OrderItemResponse);
+        }
+        catch (Exception ex)
+        {
+            return StatusCode(500, "Internal server error");
+        }
+    }
 }

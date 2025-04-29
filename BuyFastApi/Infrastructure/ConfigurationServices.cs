@@ -27,9 +27,13 @@ public static class ConfigurationServices
         //Added Respositories
         services.AddTransient<ICategoryRepository,CategoryRepository>();
         services.AddTransient<IProductRepository,ProductRepository>();
+        services.AddTransient<ICartItemRepository, CartItemRepository>();
+        services.AddTransient<IOrderRepository, OrderRepository>();
         
         services.AddTransient<IGenericService<CategoryRequest,CategoryResponse,Category>,CategoryService>();
         services.AddTransient<IGenericService<ProductRequest,ProductResponse,Product>,ProductService>();
+        services.AddTransient<IGenericService<CartDto, CardItemResponse, CartItem>, CartItemService>();
+        services.AddTransient<IGenericService<OrderRequest, OrderResponse, Order>, OrderService>();
         
         //adding custom Auth
         services.AddAuthToken();

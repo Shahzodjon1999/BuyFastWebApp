@@ -95,10 +95,11 @@ C:\Users\Sh_jonizokov\Desktop\BuyFastWebApp\BuyFastUI\obj\Debug\net9.0\staticweb
 C:\Users\Sh_jonizokov\Desktop\BuyFastWebApp\BuyFastUI\obj\Debug\net9.0\staticwebassets\msbuild.buildMultiTargeting.BuyFastUI.props
 C:\Users\Sh_jonizokov\Desktop\BuyFastWebApp\BuyFastUI\obj\Debug\net9.0\staticwebassets\msbuild.buildTransitive.BuyFastUI.props
 C:\Users\Sh_jonizokov\Desktop\BuyFastWebApp\BuyFastUI\obj\Debug\net9.0\staticwebassets.pack.json
-C:\Users\Sh_jonizokov\Desktop\BuyFastWebApp\BuyFastUI\obj\Debug\net9.0\staticwebassets.upToDateCheck.txt
 C:\Users\Sh_jonizokov\Desktop\BuyFastWebApp\BuyFastUI\obj\Debug\net9.0\BuyFastUI.csproj.Up2Date
 C:\Users\Sh_jonizokov\Desktop\BuyFastWebApp\BuyFastUI\obj\Debug\net9.0\BuyFastUI.dll
 C:\Users\Sh_jonizokov\Desktop\BuyFastWebApp\BuyFastUI\obj\Debug\net9.0\refint\BuyFastUI.dll
 C:\Users\Sh_jonizokov\Desktop\BuyFastWebApp\BuyFastUI\obj\Debug\net9.0\BuyFastUI.pdb
 C:\Users\Sh_jonizokov\Desktop\BuyFastWebApp\BuyFastUI\obj\Debug\net9.0\BuyFastUI.genruntimeconfig.cache
 C:\Users\Sh_jonizokov\Desktop\BuyFastWebApp\BuyFastUI\obj\Debug\net9.0\ref\BuyFastUI.dll
+C:\Users\Sh_jonizokov\Desktop\BuyFastWebApp\BuyFastUI\obj\Debug\net9.0\staticwebassets.upToDateCheck.txt
+C:\Users\Sh_jonizokov\Desktop\BuyFastWebApp\BuyFastUI\bin\Debug\net9.0\Newtonsoft.Json.dll

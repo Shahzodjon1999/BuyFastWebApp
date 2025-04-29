@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("BuyFastAdmin")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+e648a13fe135abbac31c65ee5b82ae5adfeaf70c")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+d0ce60d2940555e958abc6a1282a346b26d55e8b")]
 [assembly: System.Reflection.AssemblyProductAttribute("BuyFastAdmin")]
 [assembly: System.Reflection.AssemblyTitleAttribute("BuyFastAdmin")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

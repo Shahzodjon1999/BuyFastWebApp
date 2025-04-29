@@ -105,4 +105,29 @@ public class ProductsController : BaseController<ProductRequest,ProductResponse,
             return StatusCode(500, "Internal server error");
         }
     }
+    
+    [AllowAnonymous]
+    [HttpGet("Id")]
+    public override ActionResult<Product> GetById(Guid id)
+    {
+        var getItem = _service.GetById(id);
+        var baseUrl = $"{Request.Scheme}://{Request.Host}{Request.PathBase}";
+        
+        Product productResponse = new Product
+        {
+         Id = getItem.Id,
+         Name = getItem.Name,
+         Description = getItem.Description,
+         Price = getItem.Price,
+         StockQuantity = getItem.StockQuantity,
+         ImageUrl = !string.IsNullOrEmpty(getItem.ImageUrl)
+             ? $"{baseUrl}/{getItem.ImageUrl}"
+             : null,
+         IsActive = getItem.IsActive,
+         CategoryId = getItem.CategoryId,
+         Reviews = getItem.Reviews,
+         Ratings = getItem.Ratings
+        };
+        return Ok(productResponse);
+    }
 }

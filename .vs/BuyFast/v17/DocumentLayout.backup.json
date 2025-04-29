@@ -1,24 +1,7 @@
 {
   "Version": 1,
   "WorkspaceRootPath": "C:\\Users\\Sh_jonizokov\\Desktop\\BuyFastWebApp\\",
-  "Documents": [
-    {
-      "AbsoluteMoniker": "D:0:0:{F9B6348E-66E5-429D-9FA8-FF56398F591B}|BuyFastUI\\BuyFastUI.csproj|c:\\users\\sh_jonizokov\\desktop\\buyfastwebapp\\buyfastui\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{F9B6348E-66E5-429D-9FA8-FF56398F591B}|BuyFastUI\\BuyFastUI.csproj|solutionrelative:buyfastui\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F9B6348E-66E5-429D-9FA8-FF56398F591B}|BuyFastUI\\BuyFastUI.csproj|c:\\users\\sh_jonizokov\\desktop\\buyfastwebapp\\buyfastui\\controllers\\accountcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F9B6348E-66E5-429D-9FA8-FF56398F591B}|BuyFastUI\\BuyFastUI.csproj|solutionrelative:buyfastui\\controllers\\accountcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F9B6348E-66E5-429D-9FA8-FF56398F591B}|BuyFastUI\\BuyFastUI.csproj|c:\\users\\sh_jonizokov\\desktop\\buyfastwebapp\\buyfastui\\views\\category\\_categorylistpartial.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{F9B6348E-66E5-429D-9FA8-FF56398F591B}|BuyFastUI\\BuyFastUI.csproj|solutionrelative:buyfastui\\views\\category\\_categorylistpartial.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F9B6348E-66E5-429D-9FA8-FF56398F591B}|BuyFastUI\\BuyFastUI.csproj|c:\\users\\sh_jonizokov\\desktop\\buyfastwebapp\\buyfastui\\controllers\\categorycontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F9B6348E-66E5-429D-9FA8-FF56398F591B}|BuyFastUI\\BuyFastUI.csproj|solutionrelative:buyfastui\\controllers\\categorycontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    }
-  ],
+  "Documents": [],
   "DocumentGroupContainers": [
     {
       "Orientation": 0,
@@ -26,7 +9,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 8,
+          "SelectedChildIndex": -1,
           "Children": [
             {
               "$type": "Bookmark",
@@ -47,58 +30,6 @@
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{34e76e81-ee4a-11d0-ae2e-00a0c90fffc3}"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "_CategoryListPartial.cshtml",
-              "DocumentMoniker": "C:\\Users\\Sh_jonizokov\\Desktop\\BuyFastWebApp\\BuyFastUI\\Views\\Category\\_CategoryListPartial.cshtml",
-              "RelativeDocumentMoniker": "BuyFastUI\\Views\\Category\\_CategoryListPartial.cshtml",
-              "ToolTip": "C:\\Users\\Sh_jonizokov\\Desktop\\BuyFastWebApp\\BuyFastUI\\Views\\Category\\_CategoryListPartial.cshtml",
-              "RelativeToolTip": "BuyFastUI\\Views\\Category\\_CategoryListPartial.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-04-25T11:42:16.12Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "CategoryController.cs",
-              "DocumentMoniker": "C:\\Users\\Sh_jonizokov\\Desktop\\BuyFastWebApp\\BuyFastUI\\Controllers\\CategoryController.cs",
-              "RelativeDocumentMoniker": "BuyFastUI\\Controllers\\CategoryController.cs",
-              "ToolTip": "C:\\Users\\Sh_jonizokov\\Desktop\\BuyFastWebApp\\BuyFastUI\\Controllers\\CategoryController.cs",
-              "RelativeToolTip": "BuyFastUI\\Controllers\\CategoryController.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAEAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-25T11:40:36.719Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "AccountController.cs",
-              "DocumentMoniker": "C:\\Users\\Sh_jonizokov\\Desktop\\BuyFastWebApp\\BuyFastUI\\Controllers\\AccountController.cs",
-              "RelativeDocumentMoniker": "BuyFastUI\\Controllers\\AccountController.cs",
-              "ToolTip": "C:\\Users\\Sh_jonizokov\\Desktop\\BuyFastWebApp\\BuyFastUI\\Controllers\\AccountController.cs",
-              "RelativeToolTip": "BuyFastUI\\Controllers\\AccountController.cs",
-              "ViewState": "AgIAAAgAAAAAAAAAAAAQwAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-25T11:25:37.826Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "_Layout.cshtml",
-              "DocumentMoniker": "C:\\Users\\Sh_jonizokov\\Desktop\\BuyFastWebApp\\BuyFastUI\\Views\\Shared\\_Layout.cshtml",
-              "RelativeDocumentMoniker": "BuyFastUI\\Views\\Shared\\_Layout.cshtml",
-              "ToolTip": "C:\\Users\\Sh_jonizokov\\Desktop\\BuyFastWebApp\\BuyFastUI\\Views\\Shared\\_Layout.cshtml",
-              "RelativeToolTip": "BuyFastUI\\Views\\Shared\\_Layout.cshtml",
-              "ViewState": "AgIAAHsAAAAAAAAAAAAQwJMAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-04-25T11:11:58.937Z",
-              "EditorCaption": ""
             }
           ]
         }

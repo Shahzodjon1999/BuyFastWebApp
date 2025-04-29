@@ -1,10 +1,16 @@
-namespace BuyFastDTO;
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
 
-public class OrderItemDto
+namespace BuyFastDTO
 {
-    public Guid Id { get; set; }
-    public Guid OrderId { get; set; }
-    public Guid ProductId { get; set; }
-    public int Quantity { get; set; }
-    public decimal Price { get; set; }
+    public class OrderItemDto
+    {
+        public Guid ProductId { get; set; }
+        public string ProductName { get; set; } // Optional, for display
+        public int Quantity { get; set; }
+        public decimal UnitPrice { get; set; }
+    }
 }
